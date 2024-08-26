@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2024 by original authors @ fontello.com</metadata>
+<defs>
+<font id="zysky" horiz-adv-x="1000" >
+<font-face font-family="zysky" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="check-double-fill" unicode="&#xe800;" d="M496 296l50-50 296 296 50-50-342-342-221 221 46 46 75-75 46-46 0 0z m0 96l171 175 50-50-171-171-50 46z m-96-196l-50-50-221 221 50 50 50-50 0 0 171-171z" horiz-adv-x="1000" />
+
+<glyph glyph-name="eye-off-line" unicode="&#xe801;" d="M192 683l-50-50 108-108c-58-54-100-129-117-212 34-180 188-313 375-313 71 0 142 21 205 58l116-116 50 50-687 691z m237-337l113-113 0 0c-17-4-34-8-50-4-17 4-34 13-42 25-12 13-21 29-25 42s0 37 4 50z m96-275c-50-4-96 8-142 25-45 21-83 50-116 87-29 42-50 84-59 134 13 62 46 116 92 158l79-79c-21-29-25-67-25-100s21-67 46-92c25-25 58-41 92-46 33-4 71 5 100 25l71-70c-42-25-88-38-138-42z m292 83l-50 50c25 34 41 71 50 109-9 41-29 79-54 112-25 33-59 63-92 83-38 21-75 38-121 42-42 4-83 4-125-8l-54 58c42 17 92 25 142 25 187 0 341-133 375-312-13-55-34-109-71-159z m-317 317c21 0 46 0 67-8 21-9 37-21 54-38 17-17 29-33 37-54 9-21 13-42 9-67l-167 167 0 0z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
