@@ -1,1 +1,0 @@
-ZYSKY Web Application
