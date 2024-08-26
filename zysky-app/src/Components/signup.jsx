@@ -83,17 +83,25 @@ const SignUp = () => {
                                 <label for="NIP">NIP</label>
                             </div>
                             <span>You must read and accept the following documents to continue</span>
+                            
                             <div className="form-check">
                                 <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                <label className="form-check-label" for="flexCheckDefault">
-                                    Default checkbox
+                                <label className="form-check-label checkbox-fl" for="flexCheckDefault">
+                                <a href="#" className='link'>Privacy Policy</a>
+                                </label>
+                            </div>
+                            <br></br>
+                            <div className="form-check">
+                                <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label className="form-check-label checkbox-fl" for="flexCheckDefault">
+                                <a href="#" className='link'>Terms of Service</a>
                                 </label>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="float-right p-t-30">
-              <button type="button" className="btn btn-success m-l-15">Utwórz konto</button>
+              <button type="button" className="btn btn-success m-l-15">Utwórz&nbsp;konto</button>
             </div>
             </form>
         </div>
