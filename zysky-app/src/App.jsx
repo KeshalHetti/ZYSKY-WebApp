@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css'
+import './assets/css/custom.css'
 import Login from './Components/login'
 import Signup from './Components/signup'
 

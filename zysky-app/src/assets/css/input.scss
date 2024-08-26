@@ -1,0 +1,35 @@
+
+/* This is to remove the arrow of select element in IE */
+select::-ms-expand {
+    display: none;
+  }
+  
+  select {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  .customselect select {
+    background: transparent;
+    width: 100px;
+    padding: 5px;
+    border: 0;
+    border-radius: 0;
+    height: 30px;
+  }
+  .customselect {
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy4wNiAxNi4wNkMxMi43Nzg4IDE2LjM0MDkgMTIuMzk3NSAxNi40OTg3IDEyIDE2LjQ5ODdDMTEuNjAyNSAxNi40OTg3IDExLjIyMTMgMTYuMzQwOSAxMC45NCAxNi4wNkw1LjI4MjAyIDEwLjQwNEM1LjAwMDc2IDEwLjEyMjYgNC44NDI4IDkuNzQxMDEgNC44NDI5IDkuMzQzMTVDNC44NDI5OSA4Ljk0NTI5IDUuMDAxMTMgOC41NjM3NyA1LjI4MjUyIDguMjgyNUM1LjU2MzkyIDguMDAxMjQgNS45NDU1MiA3Ljg0MzI4IDYuMzQzMzggNy44NDMzOEM2Ljc0MTIzIDcuODQzNDcgNy4xMjI3NiA4LjAwMTYxIDcuNDA0MDIgOC4yODNMMTIgMTIuODc5TDE2LjU5NiA4LjI4M0MxNi44Nzg4IDguMDA5NjMgMTcuMjU3NiA3Ljg1ODI2IDE3LjY1MDkgNy44NjE0OUMxOC4wNDQyIDcuODY0NzIgMTguNDIwNSA4LjAyMjMgMTguNjk4OCA4LjMwMDI4QzE4Ljk3NyA4LjU3ODI2IDE5LjEzNDkgOC45NTQ0MSAxOS4xMzg1IDkuMzQ3N0MxOS4xNDIxIDkuNzQxIDE4Ljk5MTEgMTAuMTIgMTguNzE4IDEwLjQwM0wxMy4wNjEgMTYuMDYxTDEzLjA2IDE2LjA2WiIgZmlsbD0iI0U2RTZFNiIvPgo8L3N2Zz4K);
+    background-repeat: no-repeat;
+    border: 0px solid white;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    overflow: hidden;
+    background-size: 24px 24px;
+    background-position-x: right;
+    background-position-y: center;
+    box-shadow: 0px 0px 22px #ccc;
+    position: fixed;
+    right: 18px;
+    top: 20px;
+    }

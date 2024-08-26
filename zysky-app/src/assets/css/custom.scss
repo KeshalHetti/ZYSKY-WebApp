@@ -1,0 +1,228 @@
+/* Custom styles to match the Theme */
+//@import '/zysky-app/src/assets/css/colors';
+//@import '/zysky-app/src/assets/css/input';
+///@import '/zysky-app/src/assets/css/modal';
+
+
+
+/*colors*/
+$primary: #0097B2;
+$primary-dark: darken($primary, 20%);
+$green : #82BC56;
+$yelloish-green: #BDD35F;
+$icon-color: #81829E;
+
+
+img{width:100%; height: auto; display: block;}
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+  }
+  *,*:focus,*:hover{
+    outline:none !important;
+    }
+  
+  .bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .text-center {text-align: center !important;}
+
+  .link{color:$primary; text-decoration: underline;}
+  
+
+/*============================== start- login===========================*/
+
+
+
+
+/*============================== end- login===========================*/
+
+
+
+/*====================modal======================*/
+
+
+
+.modal-box {
+    left: 0;
+    position: fixed;
+    z-index: 999;
+    background-color: rgb(0 0 0 / 60%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.my-modal {
+    position: fixed;
+    //background-color: #fff;
+    left: 50%;
+    top: 40px;
+    border-radius: 4px;
+    padding: 2%;
+
+    .modal-body {
+        display: block;
+        width: 100%;
+        height: 400px;
+        overflow-y: scroll;
+        margin-top: 26px;
+    }
+}
+
+.my-modal-container {
+    position: relative;
+    //background-color: $white;
+    margin-top: 25vh;
+    margin-left: 35vw;
+    //border: 1px solid $lighter-grey;
+    width: 30vw;
+    border-radius: 5px;
+    min-height: 450px;
+}
+
+
+.my-modal-content {
+    margin: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.my-model-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    button {
+        background-color: transparent;
+        width: 30px;
+        height: 30px;
+        display: contents;
+    }
+
+    i {
+        font-size: 30px;
+        color: $primary;
+
+        &:hover {
+            color: $primary-dark
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .modal-lg {
+        max-width: 60%;
+        margin-left: -30%;
+    }
+
+    .modal-sm {
+        max-width: 90%;
+        margin-left: -45%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .modal-lg {
+        max-width: 60%;
+        margin-left: -30%;
+    }
+
+    .modal-sm {
+        max-width: 50%;
+        margin-left: -25%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .modal-sm {
+        max-width: 26%;
+        margin-left: -13%;
+    }
+}
+
+
+
+
+/*===================end Modal===================*/
+
+
+/*===========Custom Input=====================*/
+
+
+.input-icon{display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    top: -56px;
+    right: 2px;
+    height: 8px;
+i{font-size: 2.2rem; color: $icon-color;}
+}
+input {
+    border-radius: 16px !important;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4)!important;
+}
+.form-control {
+    padding: 1rem .9rem !important;}
+
+/* This is to remove the arrow of select element in IE */
+select::-ms-expand {
+    display: none;
+  }
+  
+  select {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  .customselect select {
+    background: transparent;
+    width: 100px;
+    padding: 5px;
+    border: 0;
+    border-radius: 0;
+    height: 30px;
+  }
+  .customselect {
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy4wNiAxNi4wNkMxMi43Nzg4IDE2LjM0MDkgMTIuMzk3NSAxNi40OTg3IDEyIDE2LjQ5ODdDMTEuNjAyNSAxNi40OTg3IDExLjIyMTMgMTYuMzQwOSAxMC45NCAxNi4wNkw1LjI4MjAyIDEwLjQwNEM1LjAwMDc2IDEwLjEyMjYgNC44NDI4IDkuNzQxMDEgNC44NDI5IDkuMzQzMTVDNC44NDI5OSA4Ljk0NTI5IDUuMDAxMTMgOC41NjM3NyA1LjI4MjUyIDguMjgyNUM1LjU2MzkyIDguMDAxMjQgNS45NDU1MiA3Ljg0MzI4IDYuMzQzMzggNy44NDMzOEM2Ljc0MTIzIDcuODQzNDcgNy4xMjI3NiA4LjAwMTYxIDcuNDA0MDIgOC4yODNMMTIgMTIuODc5TDE2LjU5NiA4LjI4M0MxNi44Nzg4IDguMDA5NjMgMTcuMjU3NiA3Ljg1ODI2IDE3LjY1MDkgNy44NjE0OUMxOC4wNDQyIDcuODY0NzIgMTguNDIwNSA4LjAyMjMgMTguNjk4OCA4LjMwMDI4QzE4Ljk3NyA4LjU3ODI2IDE5LjEzNDkgOC45NTQ0MSAxOS4xMzg1IDkuMzQ3N0MxOS4xNDIxIDkuNzQxIDE4Ljk5MTEgMTAuMTIgMTguNzE4IDEwLjQwM0wxMy4wNjEgMTYuMDYxTDEzLjA2IDE2LjA2WiIgZmlsbD0iI0U2RTZFNiIvPgo8L3N2Zz4K);
+    background-repeat: no-repeat;
+    border: 0px solid white;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    overflow: hidden;
+    background-size: 24px 24px;
+    background-position-x: right;
+    background-position-y: center;
+    box-shadow: 0px 0px 22px #ccc;
+    position: fixed;
+    right: 18px;
+    top: 20px;
+    }
+
+
+    /*==================Buttons=====================================*/
+    .btn-success{background-color: $yelloish-green !important; border: 2px solid $yelloish-green !important;}
+    .btn-outlined{background-color: #fff !important; border: 2px solid $yelloish-green !important;}
+    .btn{box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4)!important;}
+
+
+    .float-right{float: right;}
+    .p-t-30{padding-top: 30px;}
+    .m-l-15{margin-left: 15px;}
+
+    .footer{position: fixed;left:0; right: 0; bottom: 0;}
+    .footer-content{background-color: #3B3B3B;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        flex-wrap: nowrap;
+        justify-content: center;align-items: center;}
