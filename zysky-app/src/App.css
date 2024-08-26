@@ -1,0 +1,68 @@
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  height: 100%;
+  width: 100%; 
+  transition: filter 300ms;
+  margin: 0 auto;
+} 
+  
+  /* Partner Portal title */
+  h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .login-group{
+    padding: 40px 0px 40px 0px ;
+    
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  /* Buttons */
+  .btn {
+    width: 120px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;  /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+  
+  input:focus {
+    border-color: #007bff;  /* Change border color on focus */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  }
+  
+  /* Forgot password link */
+  .forgot-password {
+    font-size: 0.9em;
+    color: #6c757d;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+
+  
