@@ -1,7 +1,7 @@
 import React from 'react';
 import "../App.css";
 import logo from '../assets/img/zysky-splash-small 1@2x.png';
-
+import { Outlet, Link } from "react-router-dom";
 
 
 const Login = () => {
