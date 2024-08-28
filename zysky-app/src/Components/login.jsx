@@ -24,11 +24,11 @@ const Login = () => {
           <form>
             <div className="form-group">
               <input type="email" className="form-control text-center" placeholder="Email" required />
-              <span class="input-icon"><i className='icon-check-double-fill'></i></span>
+              <span className="input-icon"><i className='icon-check-double-fill'></i></span>
             </div>
             <div className="form-group">
               <input type="password" className="form-control text-center" placeholder="Password" required />
-              <span class="input-icon"><i className='icon-eye-off-line'></i></span>
+              <span className="input-icon"><i className='icon-eye-off-line'></i></span>
             </div>
 
             <div className="text-end">
@@ -36,7 +36,7 @@ const Login = () => {
             </div>
 
             <div className="float-right p-t-30">
-              <button type="button" className="btn btn-outlined">Sign Up</button>
+               <Link to="/signup"><button type="button" className="btn btn-outlined">Sign Up</button></Link>
               <button type="submit" className="btn btn-success m-l-15">Log In</button>
             </div>
           </form>

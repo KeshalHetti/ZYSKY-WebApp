@@ -1,20 +1,21 @@
 import React from 'react';
 import "../App.css"; // Import the CSS for styling
 import logo from '../assets/img/zysky-splash-small 1@2x.png';
+import { Outlet, Link } from "react-router-dom";
 
 const SignUp = () => {
     return (
         <div>
-            <div class="row">
-                <div class="col-3">
+            <div className="row">
+                <div className="col-3">
                     &nbsp;
                 </div>
-                <div class="col-6">
+                <div className="col-6">
                     <div className="logo">
                         <img src={logo} alt="Logo" />
                     </div>
                 </div>
-                <div class="col-3">
+                <div className="col-3">
                     &nbsp;
                 </div>
             </div>
@@ -101,7 +102,7 @@ const SignUp = () => {
                     </div>
                 </div>
                 <div className="float-right p-t-30">
-              <button type="button" className="btn btn-success m-l-15">Utwórz&nbsp;konto</button>
+                <Link to="/home"><button type="button" className="btn btn-success m-l-15">Utwórz&nbsp;konto</button></Link>
             </div>
             </form>
         </div>
