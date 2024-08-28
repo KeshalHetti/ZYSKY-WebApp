@@ -359,26 +359,30 @@ a:hover
 #menu
 {
   position: absolute;
-  width: 280px;
+  width: 250px;
   margin: 0 0 0 0;
-  padding: 20px;
-  padding-top: 125px;
-  
-  background: #ededed;
+  padding: 5px;
+  background: #fff;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
-  transform: translate(-98%, 0);
+  transform: translate(0, 0);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #menu li
 {
-  padding: 10px 0;
+  padding: 10px 5px;
   font-size: 22px;
+  text-align: left;
+  i{color: $yelloish-green; font-size: 28px; float: left;}
+  a{color:#000; text-decoration: none; display: flex} 
+  span{float: left;
+    padding: 10px;
+    background: transparent;}
 }
 
 /*
@@ -387,8 +391,9 @@ a:hover
 #menuToggle input:checked ~ #menu
 {
   transform: none;
-  width: 50px;
+  width: 200px;
   background-color: #BDD35F;
+  left: 0;
 }
 
 #menuToggle input:checked ~ div.content

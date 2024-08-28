@@ -1,3 +1,10 @@
 
 .icon-check-double-fill:before { content: '\e800'; } /* '' */
 .icon-eye-off-line:before { content: '\e801'; } /* '' */
+.icon-account:before { content: '\e802'; } /* '' */
+.icon-promotions:before { content: '\e803'; } /* '' */
+.icon-map:before { content: '\e804'; } /* '' */
+.icon-bell:before { content: '\e805'; } /* '' */
+.icon-dialog:before { content: '\e806'; } /* '' */
+.icon-home:before { content: '\e807'; } /* '' */
+.icon-log-out:before { content: '\e808'; } /* '' */
