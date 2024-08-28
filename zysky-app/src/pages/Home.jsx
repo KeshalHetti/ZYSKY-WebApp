@@ -8,6 +8,18 @@ const Home = () => {
             <form>
                 <div className='fieldset homefeildset'>
                     <div className='legend'>Statistics</div>
+                    <div class="statistics-item">
+                      <h3>Locations</h3>
+                    </div>
+                    <div class="statistics-item">
+                      <h3>Promos</h3>
+                    </div>
+                    <div class="statistics-item">
+                      <h3>Clients</h3>
+                    </div>
+                    <div class="statistics-item">
+                      <h3>Notifications</h3>
+                    </div>
                 </div>
 
                 <div className='fieldset'>
