@@ -441,6 +441,9 @@ a:hover {
   height: 100vh;
 }/*# sourceMappingURL=custom.css.map */
 
+
+/* ======================= Home Page ======================== */
+
 .homepage-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -453,4 +456,16 @@ a:hover {
 
   .homefeildset{
     margin-bottom: 50px;
+    display: flex; 
+    justify-content: space-between;
+  }
+
+  .statistics-item {
+    text-align: center;
+    
+  }
+
+  .statistics-item h3 {
+    font-size: 24px;
+    color: #333;
   }
