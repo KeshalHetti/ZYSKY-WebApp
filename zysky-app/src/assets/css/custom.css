@@ -440,3 +440,17 @@ a:hover {
   top: 0;
   height: 100vh;
 }/*# sourceMappingURL=custom.css.map */
+
+.homepage-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+  }
+
+  .homefeildset{
+    margin-bottom: 50px;
+  }
