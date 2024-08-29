@@ -605,4 +605,12 @@ a:hover {
 
 .fl {
   float: left;
+}
+
+.promo-logo {
+  width: 80px;
+}
+
+.white {
+  color: #fff !important;
 }/*# sourceMappingURL=custom.css.map */

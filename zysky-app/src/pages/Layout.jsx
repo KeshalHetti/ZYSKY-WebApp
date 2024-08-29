@@ -19,7 +19,7 @@ const Layout = () => {
             <Link to="/Home"><i className="icon-home"></i><span>Home</span></Link>
           </li>
           <li>
-            <Link to="/login"><i className="icon-promotions"></i><span>Promos</span></Link>
+            <Link to="/promos"><i className="icon-promotions"></i><span>Promos</span></Link>
           </li>
           <li>
             <Link to="/locations"><i className="icon-map"></i><span>Locations</span></Link>
