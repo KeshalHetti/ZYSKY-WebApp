@@ -12,7 +12,7 @@ const Locations = () => {
     <p>Here is the list of your current locations. You need at least one location in order to create a promo.</p>
     </div>
     
-    <div className="col text-right"><Link to="/"><button type="submit" className="btn btn-transparent m-l-15 p-a-10">Add&nbsp;New&nbsp;Location </button></Link></div>
+    <div className="col text-right"><Link to="/newlocation"><button type="submit" className="btn btn-transparent m-l-15 p-a-10">Add&nbsp;New&nbsp;Location </button></Link></div>
   </div>
 </div>
 

@@ -7,6 +7,7 @@ import Signup from './Components/signup'
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Locations from "./pages/Locations";
+import Newlocations from "./pages/Newlocation";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
       <Route path="/" element={<Home />}></Route>
       <Route path="/home" element={<Home />}></Route>
       <Route path="/locations" element={<Locations />}></Route>
+      <Route path="/newlocation" element={<Newlocations />}></Route>
       </Route>
       
       </Routes>

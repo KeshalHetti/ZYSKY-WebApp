@@ -130,8 +130,8 @@ h2 {
   display: flex;
   flex-direction: row-reverse;
   position: relative;
-  top: -56px;
-  right: 2px;
+  top: -42px;
+  right: 4px;
   height: 8px;
 }
 .input-icon i {
@@ -140,7 +140,7 @@ h2 {
 }
 
 .form-control {
-  border-radius: 16px !important;
+  border-radius: 14px !important;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4) !important;
 }
 
@@ -159,30 +159,49 @@ select {
        appearance: none;
 }
 
-.customselect select {
+.langselect select, .customselect select {
   background: transparent;
-  width: 100px;
   padding: 5px;
   border: 0;
   border-radius: 0;
   height: 30px;
 }
 
-.customselect {
+.langselect, .customselect {
   background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy4wNiAxNi4wNkMxMi43Nzg4IDE2LjM0MDkgMTIuMzk3NSAxNi40OTg3IDEyIDE2LjQ5ODdDMTEuNjAyNSAxNi40OTg3IDExLjIyMTMgMTYuMzQwOSAxMC45NCAxNi4wNkw1LjI4MjAyIDEwLjQwNEM1LjAwMDc2IDEwLjEyMjYgNC44NDI4IDkuNzQxMDEgNC44NDI5IDkuMzQzMTVDNC44NDI5OSA4Ljk0NTI5IDUuMDAxMTMgOC41NjM3NyA1LjI4MjUyIDguMjgyNUM1LjU2MzkyIDguMDAxMjQgNS45NDU1MiA3Ljg0MzI4IDYuMzQzMzggNy44NDMzOEM2Ljc0MTIzIDcuODQzNDcgNy4xMjI3NiA4LjAwMTYxIDcuNDA0MDIgOC4yODNMMTIgMTIuODc5TDE2LjU5NiA4LjI4M0MxNi44Nzg4IDguMDA5NjMgMTcuMjU3NiA3Ljg1ODI2IDE3LjY1MDkgNy44NjE0OUMxOC4wNDQyIDcuODY0NzIgMTguNDIwNSA4LjAyMjMgMTguNjk4OCA4LjMwMDI4QzE4Ljk3NyA4LjU3ODI2IDE5LjEzNDkgOC45NTQ0MSAxOS4xMzg1IDkuMzQ3N0MxOS4xNDIxIDkuNzQxIDE4Ljk5MTEgMTAuMTIgMTguNzE4IDEwLjQwM0wxMy4wNjEgMTYuMDYxTDEzLjA2IDE2LjA2WiIgZmlsbD0iI0U2RTZFNiIvPgo8L3N2Zz4K);
   background-repeat: no-repeat;
   border: 0px solid white;
   border-radius: 5px;
-  width: 100px;
   height: 30px;
   overflow: hidden;
   background-size: 24px 24px;
   background-position-x: right;
   background-position-y: center;
   box-shadow: 0px 0px 22px #ccc;
+  border-radius: 14px !important;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4) !important;
+}
+
+.langselect {
+  width: 100px;
   position: fixed;
   right: 18px;
   top: 20px;
+}
+
+.customselect {
+  width: 100%;
+  height: 42px;
+}
+.customselect select {
+  width: 100%;
+  padding: 2px 6px 0 10px;
+  height: 48px;
+}
+
+.fl-select-label {
+  top: -8px !important;
+  font-size: 10px;
 }
 
 /*==================Buttons=====================================*/
@@ -212,7 +231,7 @@ select {
 
 .btn-transparent {
   background-color: transparent !important;
-  color: #fff !important;
+  color: #999 !important;
   width: auto;
 }
 
@@ -341,7 +360,7 @@ a:hover {
   background-color: #fff;
 }
 
-#menuToggle input {
+#menuToggle .toggleinput {
   display: block;
   width: 140px;
   height: 52px;
@@ -415,6 +434,7 @@ a:hover {
   transform-origin: 0% 0%;
   transform: translate(0, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  height: 100vh;
 }
 
 #menu li {
@@ -500,6 +520,13 @@ a:hover {
   height: 80vh;
 }
 
+.content-container-no-radious {
+  padding: 40px;
+  background-color: #fff;
+  overflow-y: scroll;
+  height: 62vh;
+}
+
 .dashbord-logo {
   width: 150px;
 }
@@ -570,4 +597,12 @@ a:hover {
   justify-content: flex-end;
   align-items: center;
   min-height: 50px;
+}
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
 }/*# sourceMappingURL=custom.css.map */

@@ -8,8 +8,8 @@ const Login = () => {
   return (
     <div>
       {/* Language selection */}
-      <div className="customselect">
-        <select className="selectCustomer">
+      <div className="langselect">
+        <select>
           <option value="pl">PL</option>
           <option value="en">EN</option>
         </select>

@@ -6,7 +6,7 @@ const Layout = () => {
     <div className="layout-container">
       <nav role="navigation">
   <div id="menuToggle">
-    <input type="checkbox" />
+    <input type="checkbox" className="toggleinput"/>
     <div className="dashbord-logo">
     <img src={logo} alt="Logo" />
     </div>
