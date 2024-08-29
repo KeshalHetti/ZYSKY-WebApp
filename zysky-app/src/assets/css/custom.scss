@@ -20,7 +20,7 @@ img{width:100%; height: auto; display: block;}
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 14px;
+    font-size: 12px;
   }
   *,*:focus,*:hover{
     outline:none !important;
@@ -369,7 +369,7 @@ a:hover
   i{color: $yelloish-green; font-size: 28px; float: left;}
   a{color:#000; text-decoration: none; display: flex} 
   span{float: left;
-    padding: 10px;
+    padding: 12px;
     background: transparent;}
 }
 
@@ -439,3 +439,9 @@ a:hover
   font-size: 26px;
 }
 .yelloish-green{color:$yelloish-green !important}
+.custom-badge{position: absolute;
+  background-color: #407BFF;
+  padding: 0px 10px;
+  transform: rotate(-45deg) translate(-8px, 12px);
+  left: -14px;}
+.pos-r{position: relative;}

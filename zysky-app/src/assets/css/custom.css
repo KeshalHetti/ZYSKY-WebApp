@@ -10,7 +10,7 @@ img {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 *, *:focus, *:hover {
@@ -400,7 +400,7 @@ a:hover {
 }
 #menu li span {
   float: left;
-  padding: 10px;
+  padding: 12px;
   background: transparent;
 }
 
@@ -507,4 +507,16 @@ a:hover {
 
 .yelloish-green {
   color: #BDD35F !important;
+}
+
+.custom-badge {
+  position: absolute;
+  background-color: #407BFF;
+  padding: 0px 10px;
+  transform: rotate(-45deg) translate(-8px, 12px);
+  left: -14px;
+}
+
+.pos-r {
+  position: relative;
 }/*# sourceMappingURL=custom.css.map */
