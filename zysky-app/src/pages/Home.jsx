@@ -3,8 +3,8 @@ import React from 'react';
 const Home = () => {
     return (
     
-    <div className='homepage-container'>
-    <h1 className='p-b-30'>Welcome to ZYSKY Partner Portal</h1>
+    <div className='content-container'>
+    <h2 className='p-b-30 text-left'>Welcome to ZYSKY Partner Portal</h2>
             <form>
                 <div className='fieldset homefeildset'>
                     <div className='legend'>Statistics</div>

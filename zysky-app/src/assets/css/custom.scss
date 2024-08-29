@@ -263,27 +263,24 @@ a:hover
 {
   display: block;
   position: relative;
-  top: 50px;
   left: 0;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
+  background-color: #fff;
 }
 
 #menuToggle input
 {
   display: block;
-  width: 40px;
-  height: 32px;
+  width: 140px;
+  height: 52px;
   position: absolute;
-  top: -7px;
-  left: -5px;
-  
+  top: 0px;
+  left: 6px;
   cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
+  opacity: 0;
+  z-index: 2;
   -webkit-touch-callout: none;
 }
 
@@ -320,10 +317,7 @@ a:hover
   transform-origin: 0% 100%;
 }
 
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
+
 #menuToggle input:checked ~ span
 {
   opacity: 1;
@@ -332,8 +326,6 @@ a:hover
 }
 
 /*
- * But let's hide the middle one.
-
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
     opacity: 1;
@@ -345,23 +337,17 @@ a:hover
 } */
 
 /*
- * Ohyeah and the last one should go the other direction
-
 #menuToggle input:checked ~ span:nth-last-child(1)
 {
   transform: rotate(-45deg) translate(0, -1px);
 } */
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
 #menu
 {
   position: absolute;
   width: 250px;
   margin: 0 0 0 0;
-  padding: 5px;
+  padding: 0;
   background: #fff;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -392,8 +378,9 @@ a:hover
 {
   transform: none;
   width: 200px;
-  background-color: #BDD35F;
   left: 0;
+
+  li span{display: none;}
 }
 
 #menuToggle input:checked ~ div.content
@@ -401,9 +388,15 @@ a:hover
   transform: none;
   transition: transform 0.5s ease-in;
   left:50px;
+  
+}
+#menuToggle input:checked ~ div.dashbord-logo{width: 50px; height: 63px; display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .content{
+  top:0;
   position: absolute;
   transform: translateX(50px);
   margin-left: 0;
@@ -419,3 +412,15 @@ a:hover
     width: 100%;
     top: 0;
     height: 100vh;}
+   
+.content{padding: 20px; background-color: #F4F4F4;}   
+.content-container{padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.dashbord-logo{width: 150px;}
+.header{background-color: transparent;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 22px;}
+.text-left{text-align: left;}

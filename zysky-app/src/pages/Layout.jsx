@@ -1,4 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
+import logo from '../assets/img/zysky-splash-small 1@2x.png';
 
 const Layout = () => {
   return (
@@ -6,10 +7,13 @@ const Layout = () => {
       <nav role="navigation">
   <div id="menuToggle">
     <input type="checkbox" />
+    <div className="dashbord-logo">
+    <img src={logo} alt="Logo" />
+    </div>
+    {/*Hamberger menu icon
+     <span></span>
     <span></span>
-    <span></span>
-    <span></span>
-    
+    <span></span> */}
     <ul id="menu">
     <li>
             <Link to="/Home"><i className="icon-home"></i><span>Home</span></Link>
@@ -33,7 +37,21 @@ const Layout = () => {
             <Link to="/locations"><i className="icon-log-out"></i><span>Logout</span></Link>
           </li>
     </ul>
-    <div className="content"><Outlet /></div>
+    <div className="content">
+    <div className="header">
+    <div className="container">
+  <div className="row">
+    <div className="col-md-6 col-sm-auto text-left">
+      <div> Company: XXXXXX</div>
+      <div> Email: xxx@xxx.com</div>
+    </div>
+    <div className="col-md-6 col-sm-auto">
+      Column
+    </div>
+  </div>
+</div>
+    </div>
+      <Outlet /></div>
   </div>
 </nav>
 
