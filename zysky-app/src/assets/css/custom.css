@@ -10,7 +10,7 @@ img {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 *, *:focus, *:hover {
@@ -216,6 +216,10 @@ select {
   margin-bottom: 20px;
 }
 
+.m-b-30 {
+  margin-bottom: 30px;
+}
+
 .p-b-20 {
   padding-bottom: 20px;
 }
@@ -229,6 +233,7 @@ select {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 99;
 }
 
 .footer-content {
@@ -318,19 +323,25 @@ a:hover {
 /*
  * Just a quick hamburger
  */
-#menuToggle span {
+/* #menuToggle span
+{
   display: block;
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
+
   background: #cdcdcd;
   border-radius: 3px;
-  z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-}
 
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+} */
 #menuToggle span:first-child {
   transform-origin: 0% 0%;
 }
@@ -409,6 +420,7 @@ a:hover {
   transform: none;
   transition: transform 0.5s ease-in;
   left: 50px;
+  width: calc(100% - 50px);
 }
 
 #menuToggle input:checked ~ div.dashbord-logo {
@@ -429,6 +441,7 @@ a:hover {
   height: 100vh;
   left: 200px;
   right: 0;
+  width: calc(100% - 250px);
 }
 
 .layout-container {
@@ -449,6 +462,8 @@ a:hover {
   padding: 40px;
   background-color: #fff;
   border-radius: 10px;
+  overflow-y: scroll;
+  height: 80vh;
 }
 
 .dashbord-logo {
@@ -464,4 +479,32 @@ a:hover {
 
 .text-left {
   text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.btn-red {
+  background-color: #FF0000 !important;
+  color: #fff !important;
+}
+
+.btn-red-outline {
+  border: 2px solid #FF0000 !important;
+  color: #FF0000 !important;
+}
+
+.number {
+  padding: 6px;
+  background-color: #BDD35F;
+  color: #fff;
+  display: inline-block;
+  border-radius: 10px;
+  min-width: 50px;
+  font-size: 26px;
+}
+
+.yelloish-green {
+  color: #BDD35F !important;
 }/*# sourceMappingURL=custom.css.map */

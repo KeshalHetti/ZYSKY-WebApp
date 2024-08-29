@@ -11,6 +11,7 @@ $primary-dark: darken($primary, 20%);
 $green : #82BC56;
 $yelloish-green: #BDD35F;
 $icon-color: #81829E;
+$red: #FF0000;
 
 
 img{width:100%; height: auto; display: block;}
@@ -19,7 +20,7 @@ img{width:100%; height: auto; display: block;}
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 14px;
   }
   *,*:focus,*:hover{
     outline:none !important;
@@ -218,10 +219,11 @@ select::-ms-expand {
     .p-t-30{padding-top: 30px;}
     .m-l-15{margin-left: 15px;}
     .m-b-20{margin-bottom: 20px;}
+    .m-b-30{margin-bottom: 30px;}
     .p-b-20{padding-bottom: 20px;}
     .p-b-30{padding-bottom: 30px;}
 
-    .footer{position: fixed;left:0; right: 0; bottom: 0;}
+    .footer{position: fixed;left:0; right: 0; bottom: 0; z-index: 99;}
     .footer-content{background-color: #3B3B3B;
         padding: 20px;
         display: flex;
@@ -287,7 +289,7 @@ a:hover
 /*
  * Just a quick hamburger
  */
-#menuToggle span
+/* #menuToggle span
 {
   display: block;
   width: 33px;
@@ -305,7 +307,7 @@ a:hover
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
-}
+} */
 
 #menuToggle span:first-child
 {
@@ -388,7 +390,7 @@ a:hover
   transform: none;
   transition: transform 0.5s ease-in;
   left:50px;
-  
+  width: calc(100% - 50px);
 }
 #menuToggle input:checked ~ div.dashbord-logo{width: 50px; height: 63px; display: flex;
   justify-content: center;
@@ -405,6 +407,7 @@ a:hover
   height: 100vh;
  left: 200px;
   right:0;
+  width: calc(100% - 250px);
 }
 .layout-container{position: fixed;
     background-color: #f6f6f6;
@@ -417,6 +420,8 @@ a:hover
 .content-container{padding: 40px;
   background-color: #fff;
   border-radius: 10px;
+  overflow-y: scroll;
+    height: 80vh;
 }
 .dashbord-logo{width: 150px;}
 .header{background-color: transparent;
@@ -424,3 +429,13 @@ a:hover
   border-bottom: 2px solid #ccc;
   margin-bottom: 22px;}
 .text-left{text-align: left;}
+.text-right{text-align: right;}
+.btn-red{background-color: $red !important; color: #fff !important;}
+.btn-red-outline{border: 2px solid $red !important; color: $red !important;}
+.number{padding: 6px; background-color: $yelloish-green; color: #fff;
+  display: inline-block;
+  border-radius: 10px;
+  min-width: 50px;
+  font-size: 26px;
+}
+.yelloish-green{color:$yelloish-green !important}

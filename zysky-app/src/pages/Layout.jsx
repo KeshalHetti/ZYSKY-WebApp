@@ -39,14 +39,16 @@ const Layout = () => {
     </ul>
     <div className="content">
     <div className="header">
-    <div className="container">
+    <div>
   <div className="row">
     <div className="col-md-6 col-sm-auto text-left">
       <div> Company: XXXXXX</div>
       <div> Email: xxx@xxx.com</div>
     </div>
-    <div className="col-md-6 col-sm-auto">
-      Column
+    <div className="col-md-6 col-sm-auto text-right">
+    <Link to="/"><button type="submit" className="btn btn-red-outline ">Free</button></Link>
+    <Link to="/"><button type="submit" className="btn btn-red m-l-15 m-l-15">Not Verified</button></Link>
+    
     </div>
   </div>
 </div>
@@ -54,7 +56,7 @@ const Layout = () => {
       <Outlet /></div>
   </div>
 </nav>
-
+<div className='footer'><span className='footer-content'>All Rights Reserved, 2024 ZYSKY Sp. z o.o. </span></div>
     </div>
   )
 };
