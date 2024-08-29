@@ -11,7 +11,8 @@ $primary-dark: darken($primary, 20%);
 $green : #82BC56;
 $yelloish-green: #BDD35F;
 $icon-color: #81829E;
-$red: #FF0000;
+$red: #FF4133;
+$orange:#FFC444;
 
 
 img{width:100%; height: auto; display: block;}
@@ -213,6 +214,12 @@ select::-ms-expand {
     .btn-success{background-color: $yelloish-green !important; border: 2px solid $yelloish-green !important;}
     .btn-outlined{background-color: #fff !important; border: 2px solid $yelloish-green !important;}
     .btn{box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4)!important;}
+    .btn-red{background-color: $red !important; color: #fff !important;}
+    .btn-red-outline{border: 2px solid $red !important; color: $red !important;}
+    .btn-transparent{background-color: transparent!important; color:#fff !important; width: auto;}
+    .btn-warning{background-color: $orange !important; color: #fff !important;}
+    .btn-danger{background-color: $red !important; color: #fff !important;}
+    .btn-info{color:#fff !important}
 
 
     .float-right{float: right;}
@@ -222,6 +229,7 @@ select::-ms-expand {
     .m-b-30{margin-bottom: 30px;}
     .p-b-20{padding-bottom: 20px;}
     .p-b-30{padding-bottom: 30px;}
+    .p-a-10{padding: 10px  !important}
 
     .footer{position: fixed;left:0; right: 0; bottom: 0; z-index: 99;}
     .footer-content{background-color: #3B3B3B;
@@ -430,8 +438,7 @@ a:hover
   margin-bottom: 22px;}
 .text-left{text-align: left;}
 .text-right{text-align: right;}
-.btn-red{background-color: $red !important; color: #fff !important;}
-.btn-red-outline{border: 2px solid $red !important; color: $red !important;}
+
 .number{padding: 6px; background-color: $yelloish-green; color: #fff;
   display: inline-block;
   border-radius: 10px;
@@ -445,3 +452,20 @@ a:hover
   transform: rotate(-45deg) translate(-8px, 12px);
   left: -14px;}
 .pos-r{position: relative;}
+.bg-yelloish-green{background-color: $yelloish-green;
+  padding: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+    min-height: 100px;
+    color: #fff;
+    box-shadow: 2px 2px 6px #999;
+    position: relative;
+}
+.smaple-logo{max-width: 50px;}
+
+/*================Table=========================*/
+.table thead tr th{font-weight: bold;}
+.grid-buttons{display: flex; 
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 50px;}

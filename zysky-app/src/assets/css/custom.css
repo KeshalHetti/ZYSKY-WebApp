@@ -200,6 +200,36 @@ select {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4) !important;
 }
 
+.btn-red {
+  background-color: #FF4133 !important;
+  color: #fff !important;
+}
+
+.btn-red-outline {
+  border: 2px solid #FF4133 !important;
+  color: #FF4133 !important;
+}
+
+.btn-transparent {
+  background-color: transparent !important;
+  color: #fff !important;
+  width: auto;
+}
+
+.btn-warning {
+  background-color: #FFC444 !important;
+  color: #fff !important;
+}
+
+.btn-danger {
+  background-color: #FF4133 !important;
+  color: #fff !important;
+}
+
+.btn-info {
+  color: #fff !important;
+}
+
 .float-right {
   float: right;
 }
@@ -226,6 +256,10 @@ select {
 
 .p-b-30 {
   padding-bottom: 30px;
+}
+
+.p-a-10 {
+  padding: 10px !important;
 }
 
 .footer {
@@ -485,16 +519,6 @@ a:hover {
   text-align: right;
 }
 
-.btn-red {
-  background-color: #FF0000 !important;
-  color: #fff !important;
-}
-
-.btn-red-outline {
-  border: 2px solid #FF0000 !important;
-  color: #FF0000 !important;
-}
-
 .number {
   padding: 6px;
   background-color: #BDD35F;
@@ -519,4 +543,31 @@ a:hover {
 
 .pos-r {
   position: relative;
+}
+
+.bg-yelloish-green {
+  background-color: #BDD35F;
+  padding: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  min-height: 100px;
+  color: #fff;
+  box-shadow: 2px 2px 6px #999;
+  position: relative;
+}
+
+.smaple-logo {
+  max-width: 50px;
+}
+
+/*================Table=========================*/
+.table thead tr th {
+  font-weight: bold;
+}
+
+.grid-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 50px;
 }/*# sourceMappingURL=custom.css.map */

@@ -22,7 +22,7 @@ const Layout = () => {
             <Link to="/login"><i className="icon-promotions"></i><span>Promos</span></Link>
           </li>
           <li>
-            <Link to="/signup"><i className="icon-map"></i><span>Locations</span></Link>
+            <Link to="/locations"><i className="icon-map"></i><span>Locations</span></Link>
           </li>
           <li>
             <Link to="/locations"><i className="icon-bell"></i><span>Notifications</span></Link>
@@ -47,7 +47,7 @@ const Layout = () => {
     </div>
     <div className="col-md-6 col-sm-auto text-right">
     <Link to="/"><button type="submit" className="btn btn-red-outline ">Free</button></Link>
-    <Link to="/"><button type="submit" className="btn btn-red m-l-15 m-l-15">Not Verified</button></Link>
+    <Link to="/"><button type="submit" className="btn btn-red m-l-15">Not Verified</button></Link>
     
     </div>
   </div>
