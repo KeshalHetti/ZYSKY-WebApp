@@ -261,6 +261,10 @@ select {
   margin-left: 15px;
 }
 
+.m-b-8 {
+  margin-bottom: 8px;
+}
+
 .m-b-20 {
   margin-bottom: 20px;
 }
@@ -556,6 +560,20 @@ a:hover {
   font-size: 26px;
 }
 
+.number-small {
+  padding: 4px;
+  background-color: #BDD35F;
+  color: #fff;
+  display: inline-block;
+  border-radius: 6px;
+  min-width: 30px;
+  font-size: 16px;
+}
+
+.txt-with-small-number {
+  padding: 6px 0 0 5px;
+}
+
 .yelloish-green {
   color: #BDD35F !important;
 }
@@ -574,7 +592,7 @@ a:hover {
 
 .bg-yelloish-green {
   background-color: #BDD35F;
-  padding: 40px;
+  padding: 20px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   min-height: 100px;
@@ -613,4 +631,21 @@ a:hover {
 
 .white {
   color: #fff !important;
+}
+
+.smalll-number-group {
+  float: left;
+  margin-bottom: 8px;
+}
+
+.small-text {
+  font-size: 8px;
+  float: left;
+  padding-left: 5px;
+}
+
+.shadow-box {
+  box-shadow: 2px 2px 6px #999;
+  padding: 8px;
+  border-radius: 8px;
 }/*# sourceMappingURL=custom.css.map */

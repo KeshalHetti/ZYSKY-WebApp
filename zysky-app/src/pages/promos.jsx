@@ -13,7 +13,7 @@ const Promos = () => {
     <p>Here is the list of your promos. </p>
     </div>
     
-    <div className="col text-right"><Link to="/newlocation"><button type="submit" className="btn btn-transparent m-l-15 p-a-10 white">Add&nbsp;New&nbsp;Promo </button></Link></div>
+    <div className="col text-right"><Link to="/newpromo"><button type="submit" className="btn btn-transparent m-l-15 p-a-10 white">Add&nbsp;New&nbsp;Promo </button></Link></div>
   </div>
 </div>
 
