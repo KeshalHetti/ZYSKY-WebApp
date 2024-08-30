@@ -331,6 +331,11 @@ select {
   font-size: 9px;
 }
 
+.form-floating.notifications {
+    width: 50px;
+    margin-left: 20px;
+  }
+
 .checkbox-fl {
   float: left;
   padding: 7px;
@@ -649,3 +654,8 @@ a:hover {
   padding: 8px;
   border-radius: 8px;
 }/*# sourceMappingURL=custom.css.map */
+
+
+.notification-setting{
+    display: flex;
+}
