@@ -128,9 +128,15 @@ img{width:100%; height: auto; display: block;}
         max-width: 90%;
         margin-left: -45%;
     }
+    .sm-m-0{margin:0 !important}
+    .sm-p-l-r-0{padding-left: 0 !important; padding-right: 0 !important;}
+    .sm-text-left{text-align: left !important;}
+    .sm-m-t-10{margin-top: 10px !important;}
 }
 
 @media only screen and (min-width: 768px) {
+   .sm-m-0{margin:0 !important}
+    .sm-p-l-r-0{padding-left: 0 !important; padding-right: 0 !important;}
     .modal-lg {
         max-width: 60%;
         margin-left: -30%;
@@ -198,7 +204,7 @@ select::-ms-expand {
     border-radius: 5px;
     height: 30px;
     overflow: hidden;
-    background-size: 24px 24px;
+    background-size: 34px 24px;
     background-position-x: right;
     background-position-y: center;
     box-shadow: 0px 0px 22px #ccc;
@@ -224,6 +230,7 @@ select::-ms-expand {
     .btn-warning{background-color: $orange !important; color: #fff !important;}
     .btn-danger{background-color: $red !important; color: #fff !important;}
     .btn-info{color:#fff !important}
+    .btn{width: auto !important;}
 
 
     .float-right{float: right;}
@@ -232,9 +239,12 @@ select::-ms-expand {
     .m-b-8{margin-bottom: 8px;}
     .m-b-20{margin-bottom: 20px;}
     .m-b-30{margin-bottom: 30px;}
+    .m-t--25{margin-top: -25px;}
     .p-b-20{padding-bottom: 20px;}
     .p-b-30{padding-bottom: 30px;}
     .p-a-10{padding: 10px  !important}
+    .p-l-10{padding-left: 10px;}
+    .max-w-50{max-width: 50px;}
 
     .footer{position: fixed;left:0; right: 0; bottom: 0; z-index: 99;}
     .footer-content{background-color: #3B3B3B;
@@ -497,3 +507,11 @@ a:hover
   .smalll-number-group{float: left; margin-bottom: 8px;}
   .small-text{font-size: 8px; float: left; padding-left: 5px;}
   .shadow-box{box-shadow: 2px 2px 6px #999; padding: 8px; border-radius: 8px;}
+  .sr-only{display: none;}
+  .black-label{background-color: #000; padding: 0 10px; color: #fff; border-radius: 8px; font-size: 8px;}
+  .display-contents{display: contents;}
+  .btn-with-text{margin-top: -5px;    margin-left: 10px;}
+  .acc-row{position: relative;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;}

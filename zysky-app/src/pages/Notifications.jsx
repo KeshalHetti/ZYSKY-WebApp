@@ -22,32 +22,33 @@ const NewNotification = () => {
                     <div className="container justify-content-md-center">
                         <div className="row">
                             <div className="col-lg-4 col-md-auto">
-                            <div className='notification-setting'>
                             <div className="form-check">
-                                <input className="form-check-input" type="checkbox" value="" id="Send notifications" />
+                                <input className="form-check-input fl" type="checkbox" value="" id="Send notifications" />
                                 <div className='fl txt-with-small-number'>Send notifications to my clients</div>
                             </div>
-                                <div className='col'>
-                                    <div class="form-floating notifications">
-                                        <input type="text" className="form-control" id="days" placeholder="days" />
-                                        <div className='fl txt-with-small-number'>Send notifications to my clients</div>
-                                        <label for="days">7</label>
+                            <div className='row'>
+                                    <div class="form-group fl  ">
+                                        <input type="text" className="form-control max-w-50 m-t--25" id="days" placeholder="" />
+                                        <label for="days" className='sr-only'>Days</label>
                                     </div>
+                                    </div>
+                                    <div className='row fl txt-with-small-number m-b-8'>days after the transaction,</div>
+                                {/* */}
+                                <div className='row'>
+                                <div className='fl'></div><div className='fl txt-with-small-number'>offering the following promo:</div>
                                 </div>
-                                </div>
-                                {/* 1 */}
-                                <div className='smalll-number-group'>
-                                <div className='fl'></div><div className='fl txt-with-small-number'>Provide a one-time promo to offer:</div>
-                                </div>
-                                <div className="form-floating customselect m-b-20">
-                                    <select clasclassNames="form-select" id="MessageTemplate" aria-label="Floating label select example">
-                                        <option value="1">One-time Promo</option>
-                                    </select>
-                                    <label for="One-time Promo">One-time Promo</label>
-                                </div>
+                                <div className="form-floating customselect">
+                            <select clasclassNames="form-select" id="One-time-Promo" aria-label="Floating label select example">
+                                <option value="1">One-time Promo</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <label for="One-time-Promo" className='fl-select-label sr-only'>One-time Promo</label>
+                        </div>
                             
                             </div>
-                            <div className="col-lg-8  col-md-auto">
+                            <div className="col-lg-2  col-md-auto"></div>
+                            <div className="col-lg-6  col-md-auto">
                                 <p>Message Preview</p>
                                 <div className='shadow-box'>
                                 Hej, dziękujemy za wizytę u nas. Wpadnij do nas ponownie, a otrzymasz fajną promkę na &lt;Promo_Name&gt; Zapraszamy, &lt; Partner_Name &gt;
@@ -82,7 +83,9 @@ const NewNotification = () => {
                         </td>
                         </tr>
                         <tr>
-                        <td>15-08-2024</td>
+                        <td>15-08-2024<br></br>
+                        <span className='black-label'>Sent</span>
+                        </td>
                         <td>Promo 2 Name</td>
                         <td>Message 2</td>
                         <td className='text-right'>
@@ -94,7 +97,7 @@ const NewNotification = () => {
                     </tbody>
                 </table>
                 {/* Add Manual Notification */}
-                <div className='fr text-right'><Link to="/newnotifications"><button type="button" className="btn btn-success m-l-15">Add Manual Notification</button></Link></div>
+                <div className='fr text-right'><Link to="/newnotifications"><button type="button" className="btn btn-success m-l-15">Add&nbsp;Manual&nbsp;Notification</button></Link></div>
             </div>
            
         </div>

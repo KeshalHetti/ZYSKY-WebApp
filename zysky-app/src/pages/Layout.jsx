@@ -31,7 +31,7 @@ const Layout = () => {
             <Link to="/transactions"><i className="icon-dialog"></i><span>Transactions</span></Link>
           </li>
           <li>
-            <Link to="/locations"><i className="icon-account"></i><span>Account</span></Link>
+            <Link to="/account"><i className="icon-account"></i><span>Account</span></Link>
           </li>
           <li>
             <Link to="/locations"><i className="icon-log-out"></i><span>Logout</span></Link>
@@ -45,7 +45,7 @@ const Layout = () => {
       <div> Company: XXXXXX</div>
       <div> Email: xxx@xxx.com</div>
     </div>
-    <div className="col-md-6 col-sm-auto text-right">
+    <div className="col-md-6 col-sm-auto text-right sm-text-left sm-m-t-10">
     <Link to="/"><button type="submit" className="btn btn-red-outline ">Free</button></Link>
     <Link to="/"><button type="submit" className="btn btn-red m-l-15">Not Verified</button></Link>
     

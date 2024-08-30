@@ -13,6 +13,7 @@ import NewPromo from "./pages/Newpromo";
 import Notifications from "./pages/Notifications";
 import Newnotifications from "./pages/Newnotifications";
 import Transactions from './pages/Transactions';
+import Account from './pages/Account';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -32,6 +33,7 @@ function App() {
       <Route path="/notifications" element={<Notifications />}></Route>
       <Route path="/newnotifications" element={<Newnotifications />}></Route>
       <Route path="/transactions" element={<Transactions />}></Route>
+      <Route path="/account" element={<Account />}></Route>
       </Route>
       
       </Routes>
