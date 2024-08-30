@@ -25,10 +25,10 @@ const Layout = () => {
             <Link to="/locations"><i className="icon-map"></i><span>Locations</span></Link>
           </li>
           <li>
-            <Link to="/locations"><i className="icon-bell"></i><span>Notifications</span></Link>
+            <Link to="/notifications"><i className="icon-bell"></i><span>Notifications</span></Link>
           </li>
           <li>
-            <Link to="/locations"><i className="icon-dialog"></i><span>Transactions</span></Link>
+            <Link to="/transactions"><i className="icon-dialog"></i><span>Transactions</span></Link>
           </li>
           <li>
             <Link to="/locations"><i className="icon-account"></i><span>Account</span></Link>
