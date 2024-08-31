@@ -36,8 +36,9 @@ const Login = () => {
             </div>
 
             <div className="float-right p-t-30">
+            <Link to="/signup"><button type="button" className="btn btn-outlined min-w-100 m-l-15 ">Sign Up</button></Link>
             <Link to="/signup"> <button type="submit" className="btn btn-success min-w-100 m-l-15">Log In</button></Link>
-               <Link to="/signup"><button type="button" className="btn btn-outlined min-w-100  ">Sign Up</button></Link>
+              
               
             </div>
           </form>

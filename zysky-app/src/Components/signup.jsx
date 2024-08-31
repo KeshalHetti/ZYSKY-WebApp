@@ -6,7 +6,7 @@ import { Outlet, Link } from "react-router-dom";
 const SignUp = () => {
     return (
         <div>
-            <div className="row">
+            <div className="row m-t-15 gx-5">
                 <div className="col-3">
                     &nbsp;
                 </div>
@@ -20,12 +20,12 @@ const SignUp = () => {
                 </div>
             </div>
 
-            <h2 className='p-b-30'>Partner Registration</h2>
+            <h2 className='p-b-40 outfit'>Partner Registration</h2>
             <form>
                 <div className='fieldset'>
                     <div className='legend'>New Partner Account</div>
                     <div className="row">
-                        <div className="col-lg-6 col-md-12">
+                        <div className="col-lg-5 col-md-12">
                             <div className="form-floating">
                                 <input type="text" className="form-control" id="Firstname" placeholder="Firstname" />
                                 <label for="Firstname">Firstname</label>
@@ -52,7 +52,8 @@ const SignUp = () => {
                             </div>
 
                         </div>
-                        <div className="col-lg-6 col-md-12">
+                        <div className="col-lg-2"></div>
+                        <div className="col-lg-5 col-md-12">
                             <div className="form-floating">
                                 <input type="text" className="form-control" id="Companyname" placeholder="Company Name" />
                                 <label for="Companyname">Company Name</label>
@@ -83,11 +84,11 @@ const SignUp = () => {
                                 <input type="text" className="form-control" id="NIP" placeholder="NIP" />
                                 <label for="NIP">NIP</label>
                             </div>
-                            <span>You must read and accept the following documents to continue</span>
-                            
+                            <span className='fl text-left'>You must read and accept the following documents to continue</span>
+                            <div className='fl'>
                             <div className="form-check">
-                                <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                <label className="form-check-label checkbox-fl" for="flexCheckDefault">
+                                <input className="form-check-input" type="checkbox" value="" id="PrivacyPolicy" />
+                                <label className="form-check-label checkbox-fl" for="PrivacyPolicy">
                                 <a href="#" className='link'>Privacy Policy</a>
                                 </label>
                             </div>
@@ -98,11 +99,12 @@ const SignUp = () => {
                                 <a href="#" className='link'>Terms of Service</a>
                                 </label>
                             </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="float-right p-t-30">
-                <Link to="/home"><button type="button" className="btn btn-success m-l-15">Utwórz&nbsp;konto</button></Link>
+                <div className="float-right p-t-30 m-r-60">
+                <Link to="/home"><button type="button" className="btn btn-success ">Utwórz&nbsp;konto</button></Link>
             </div>
             </form>
         </div>

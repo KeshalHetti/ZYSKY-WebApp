@@ -12,6 +12,7 @@ img {
   font-weight: 400;
   font-style: normal;
   font-size: 12px;
+  color: #979797;
 }
 
 *, *:focus, *:hover {
@@ -27,10 +28,11 @@ img {
 .outfit {
   font-family: "Outfit", sans-serif !important;
   font-optical-sizing: auto;
-  font-weight: 200;
+  font-weight: 240;
   font-style: normal;
   font-size: 40px;
   margin-top: -16px;
+  color: #000;
 }
 
 .text-center {
@@ -180,10 +182,16 @@ h2 {
 .form-control {
   border-radius: 10px !important;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3) !important;
+  color: #979797 !important;
 }
 
 .form-control {
   padding: 1.2rem 0.9rem !important;
+}
+
+.form-floating label {
+  color: #979797 !important;
+  left: 4px !important;
 }
 
 /* This is to remove the arrow of select element in IE */
@@ -301,6 +309,10 @@ select {
   padding-top: 30px;
 }
 
+.m-r-60 {
+  margin-right: 60px;
+}
+
 .m-l-15 {
   margin-left: 15px;
 }
@@ -317,6 +329,10 @@ select {
   margin-bottom: 30px;
 }
 
+.m-t-15 {
+  margin-top: -15px;
+}
+
 .m-t--25 {
   margin-top: -25px;
 }
@@ -327,6 +343,10 @@ select {
 
 .p-b-30 {
   padding-bottom: 30px;
+}
+
+.p-b-40 {
+  padding-bottom: 40px;
 }
 
 .p-a-10 {
@@ -366,21 +386,23 @@ select {
 }
 
 .fieldset {
-  border: 1px solid #999;
+  border: 1px solid #E6E6E6;
   display: block;
   position: relative;
-  padding: 40px;
+  padding: 30px 64px;
 }
 
 .legend {
   position: absolute;
-  left: 0;
-  margin-top: -55px;
+  left: 15px;
+  margin-top: -48px;
   background-color: #fff;
+  padding: 7px;
+  color: #979797;
 }
 
 .form-floating {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .form-floating > .form-control:not(:-moz-placeholder-shown) ~ label::after {
@@ -394,6 +416,18 @@ select {
 .checkbox-fl {
   float: left;
   padding: 7px;
+}
+
+.form-check-input, .form-check-input:checked {
+  border: 2px solid #407BFF !important;
+  padding: 2px !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.form-check-input[type=checkbox] {
+  width: 20px !important;
+  border: 2px solid #407BFF !important;
 }
 
 /*=============================Layout===================================*/
