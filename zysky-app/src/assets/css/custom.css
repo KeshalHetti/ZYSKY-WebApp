@@ -357,12 +357,20 @@ select {
   padding-left: 10px;
 }
 
+.p-l-30 {
+  padding-left: 30px;
+}
+
 .max-w-50 {
   max-width: 50px;
 }
 
 .min-w-100 {
   min-width: 100px !important;
+}
+
+.min-w-200 {
+  min-width: 200px !important;
 }
 
 .footer {
@@ -520,10 +528,22 @@ a:hover {
 {
   transform: rotate(-45deg) translate(0, -1px);
 } */
+.sidebar {
+  height: 100vh;
+  box-shadow: 4px 4px 6px #b8b8b8;
+  display: block;
+  position: fixed;
+  background: #ffffff;
+  width: 204px;
+  left: 0;
+  top: 0;
+  z-index: 9;
+}
+
 #menu {
   position: absolute;
-  width: 250px;
-  margin: 0 0 0 0;
+  width: 200px;
+  margin: 10px 0 0 0;
   padding: 0;
   background: #fff;
   list-style-type: none;
@@ -532,11 +552,10 @@ a:hover {
   transform-origin: 0% 0%;
   transform: translate(0, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  height: 100vh;
 }
 
 #menu li {
-  padding: 10px 5px;
+  padding: 0 5px;
   font-size: 22px;
   text-align: left;
 }
@@ -552,8 +571,9 @@ a:hover {
 }
 #menu li span {
   float: left;
-  padding: 12px;
+  padding: 12px 4px 0 0;
   background: transparent;
+  color: #000;
 }
 
 /*
@@ -583,17 +603,41 @@ a:hover {
   flex-direction: column;
 }
 
+#root {
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+
 .content {
   top: 0;
-  position: absolute;
+  position: relative;
   transform: translateX(50px);
   margin-left: 0;
   transition: transform 0.5s ease-out;
   background-color: #e1e1e1;
   height: 100vh;
-  left: 200px;
+  left: 154px;
   right: 0;
-  width: calc(100% - 250px);
+  width: calc(100% - 204px);
+}
+
+h1 {
+  color: #000 !important;
+  font-size: 32px !important;
+}
+
+.statistics h4 {
+  color: #000;
+  font-size: 26px;
+}
+.statistics h1 {
+  color: #000;
+  font-size: 42px !important;
+}
+
+.logged-info div {
+  color: #000;
+  font-size: 15px;
 }
 
 .layout-container {
@@ -606,16 +650,17 @@ a:hover {
 }
 
 .content {
-  padding: 20px;
+  padding: 15px;
   background-color: #F4F4F4;
+  margin-bottom: 160px;
 }
 
 .content-container {
   padding: 40px;
   background-color: #fff;
   border-radius: 10px;
-  overflow-y: scroll;
-  height: 80vh;
+  /*overflow-y: scroll; */
+  box-shadow: 1px 6px 6px #999;
 }
 
 .content-container-no-radious {
@@ -626,7 +671,10 @@ a:hover {
 }
 
 .dashbord-logo {
-  width: 150px;
+  width: 166px;
+  left: 15px;
+  position: relative;
+  border-bottom: 1.6px solid #a7a7a7;
 }
 
 .header {
@@ -649,9 +697,10 @@ a:hover {
   background-color: #BDD35F;
   color: #fff;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 6px;
   min-width: 50px;
   font-size: 26px;
+  margin-bottom: 20px;
 }
 
 .number-small {
@@ -662,6 +711,11 @@ a:hover {
   border-radius: 6px;
   min-width: 30px;
   font-size: 16px;
+}
+
+.quick-start h4 {
+  text-decoration: underline;
+  font-size: 24px;
 }
 
 .txt-with-small-number {
@@ -675,9 +729,10 @@ a:hover {
 .custom-badge {
   position: absolute;
   background-color: #407BFF;
-  padding: 0px 10px;
-  transform: rotate(-45deg) translate(-8px, 12px);
+  padding: 0px 8px;
+  transform: rotate(-38deg) translate(8px, -2px);
   left: -14px;
+  color: #fff;
 }
 
 .pos-r {
@@ -770,4 +825,8 @@ a:hover {
   width: 100%;
   display: inline-block;
   margin-bottom: 10px;
+}
+
+.font-10px {
+  font-size: 10px;
 }/*# sourceMappingURL=custom.css.map */

@@ -271,8 +271,10 @@ select::-ms-expand {
     .p-b-40{padding-bottom: 40px;}
     .p-a-10{padding: 10px  !important}
     .p-l-10{padding-left: 10px;}
+    .p-l-30{padding-left: 30px;}
     .max-w-50{max-width: 50px;}
     .min-w-100{min-width: 100px !important}
+    .min-w-200{min-width: 200px !important}
 
     .footer{position: fixed;left:0; right: 0; bottom: 0; z-index: 99;}
     .footer-content{background-color: #3B3B3B;
@@ -408,35 +410,43 @@ a:hover
 {
   transform: rotate(-45deg) translate(0, -1px);
 } */
-
+.sidebar{
+  height: 100vh;
+  box-shadow: 4px 4px 6px #b8b8b8;
+  display: block;
+  position: fixed;
+  background: #ffffff;
+  width: 204px;
+  left: 0;
+  top: 0;
+  z-index: 9;
+}
 #menu
 {
   position: absolute;
-  width: 250px;
-  margin: 0 0 0 0;
+  width: 200px;
+  margin: 10px 0 0 0;
   padding: 0;
   background: #fff;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-  
   transform-origin: 0% 0%;
   transform: translate(0, 0);
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  height: 100vh;
+  
 }
 
 #menu li
 {
-  padding: 10px 5px;
+  padding: 0 5px;
   font-size: 22px;
   text-align: left;
   i{color: $yelloish-green; font-size: 28px; float: left;}
   a{color:#000; text-decoration: none; display: flex} 
   span{float: left;
-    padding: 12px;
-    background: transparent;}
+    padding: 12px 4px 0 0;
+    background: transparent; color:#000}
 }
 
 /*
@@ -462,19 +472,24 @@ a:hover
   justify-content: center;
   flex-direction: column;
 }
-
+#root{padding:0 !important; max-width: 100% !important}
 .content{
   top:0;
-  position: absolute;
+  position: relative;
   transform: translateX(50px);
   margin-left: 0;
   transition: transform 0.5s ease-out;
   background-color: #e1e1e1;
   height: 100vh;
- left: 200px;
+ left: 154px;
   right:0;
-  width: calc(100% - 250px);
+  width: calc(100% - 204px);
 }
+h1{color:#000 !important; font-size: 32px !important}
+.statistics{ h4{color:#000;     font-size: 26px;}
+h1{color:#000; font-size: 42px !important;;}  
+}
+.logged-info div{color: #000; font-size: 15px;}
 .layout-container{position: fixed;
     background-color: #f6f6f6;
     left: 0;
@@ -482,19 +497,22 @@ a:hover
     top: 0;
     height: 100vh;}
    
-.content{padding: 20px; background-color: #F4F4F4;}   
+.content{padding: 15px; background-color: #F4F4F4; margin-bottom: 160px;}   
 .content-container{padding: 40px;
   background-color: #fff;
   border-radius: 10px;
-  overflow-y: scroll;
-    height: 80vh;
+  /*overflow-y: scroll; */
+    box-shadow: 1px 6px 6px #999;
 }
 .content-container-no-radious{padding: 40px;
   background-color: #fff;
   overflow-y: scroll;
     height: 62vh;
 }
-.dashbord-logo{width: 150px;}
+.dashbord-logo{width: 166px;
+  left: 15px;
+  position: relative;
+  border-bottom: 1.6px solid #a7a7a7;}
 .header{background-color: transparent;
   padding-bottom: 8px;
   border-bottom: 2px solid #ccc;
@@ -504,9 +522,10 @@ a:hover
 
 .number{padding: 6px; background-color: $yelloish-green; color: #fff;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 6px;
   min-width: 50px;
   font-size: 26px;
+  margin-bottom: 20px;
 }
 .number-small{padding: 4px; background-color: $yelloish-green; color: #fff;
   display: inline-block;
@@ -514,13 +533,15 @@ a:hover
   min-width: 30px;
   font-size: 16px;
 }
+.quick-start h4{text-decoration: underline; font-size: 24px;}
 .txt-with-small-number{padding: 6px 0 0 5px}
 .yelloish-green{color:$yelloish-green !important}
-.custom-badge{position: absolute;
-  background-color: #407BFF;
-  padding: 0px 10px;
-  transform: rotate(-45deg) translate(-8px, 12px);
-  left: -14px;}
+.custom-badge{    position: absolute;
+  background-color: $link;
+  padding: 0px 8px;
+  transform: rotate(-38deg) translate(8px, -2px);
+  left: -14px;
+  color: #fff;}
 .pos-r{position: relative;}
 .bg-yelloish-green{background-color: $yelloish-green;
   padding: 20px;
@@ -556,3 +577,4 @@ a:hover
     width: 100%;
     display: inline-block;
     margin-bottom: 10px;}
+    .font-10px{font-size: 10px;}
