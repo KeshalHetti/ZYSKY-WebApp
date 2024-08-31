@@ -1,7 +1,7 @@
 /* Custom styles to match the Theme */
 //@import '/zysky-app/src/assets/css/colors';
 //@import '/zysky-app/src/assets/css/input';
-
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 
 
@@ -13,6 +13,8 @@ $yelloish-green: #BDD35F;
 $icon-color: #81829E;
 $red: #FF4133;
 $orange:#FFC444;
+$link : #407BFF;
+$btn-text-color: #979797;
 
 
 img{width:100%; height: auto; display: block;}
@@ -32,14 +34,26 @@ img{width:100%; height: auto; display: block;}
     font-weight: 700;
     font-style: normal;
   }
+
+  .outfit  {
+    font-family: "Outfit", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 40px;
+    margin-top: -16px;
+  }
+
   .text-center {text-align: center !important;}
 
-  .link{color:$primary; text-decoration: underline;}
+  .link{color:$link; text-decoration: underline;}
   h2{font-family: "Poppins", sans-serif !important;}
   
 
 /*============================== start- login===========================*/
-
+.login-group {
+  padding: 30px 0px 40px 0px !important;
+}
 
 
 
@@ -65,7 +79,7 @@ img{width:100%; height: auto; display: block;}
     position: fixed;
     //background-color: #fff;
     left: 50%;
-    top: 40px;
+    top: 30px;
     border-radius: 4px;
     padding: 2%;
 
@@ -168,17 +182,21 @@ img{width:100%; height: auto; display: block;}
 .input-icon{display: flex;
     flex-direction: row-reverse;
     position: relative;
-    top: -42px;
+    top: -44px;
     right: 4px;
     height: 8px;
-i{font-size: 2.2rem; color: $icon-color;}
+i{font-size: 2rem; color: $icon-color;}
+}
+.form-group {
+  margin-bottom: 2px !important
+}
+
+.form-control {
+    border-radius: 10px !important;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3) !important;
 }
 .form-control {
-    border-radius: 14px !important;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4)!important;
-}
-.form-control {
-    padding: 1rem .9rem !important;}
+    padding: 1.2rem .9rem !important;}
 
 /* This is to remove the arrow of select element in IE */
 select::-ms-expand {
@@ -192,10 +210,11 @@ select::-ms-expand {
   
   .langselect select, .customselect select{
     background: transparent;
-    padding: 5px;
+    padding: 8px;
     border: 0;
     border-radius: 0;
     height: 30px;
+    width: 100%;
   }
   .langselect, .customselect {
     background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy4wNiAxNi4wNkMxMi43Nzg4IDE2LjM0MDkgMTIuMzk3NSAxNi40OTg3IDEyIDE2LjQ5ODdDMTEuNjAyNSAxNi40OTg3IDExLjIyMTMgMTYuMzQwOSAxMC45NCAxNi4wNkw1LjI4MjAyIDEwLjQwNEM1LjAwMDc2IDEwLjEyMjYgNC44NDI4IDkuNzQxMDEgNC44NDI5IDkuMzQzMTVDNC44NDI5OSA4Ljk0NTI5IDUuMDAxMTMgOC41NjM3NyA1LjI4MjUyIDguMjgyNUM1LjU2MzkyIDguMDAxMjQgNS45NDU1MiA3Ljg0MzI4IDYuMzQzMzggNy44NDMzOEM2Ljc0MTIzIDcuODQzNDcgNy4xMjI3NiA4LjAwMTYxIDcuNDA0MDIgOC4yODNMMTIgMTIuODc5TDE2LjU5NiA4LjI4M0MxNi44Nzg4IDguMDA5NjMgMTcuMjU3NiA3Ljg1ODI2IDE3LjY1MDkgNy44NjE0OUMxOC4wNDQyIDcuODY0NzIgMTguNDIwNSA4LjAyMjMgMTguNjk4OCA4LjMwMDI4QzE4Ljk3NyA4LjU3ODI2IDE5LjEzNDkgOC45NTQ0MSAxOS4xMzg1IDkuMzQ3N0MxOS4xNDIxIDkuNzQxIDE4Ljk5MTEgMTAuMTIgMTguNzE4IDEwLjQwM0wxMy4wNjEgMTYuMDYxTDEzLjA2IDE2LjA2WiIgZmlsbD0iI0U2RTZFNiIvPgo8L3N2Zz4K);
@@ -208,10 +227,10 @@ select::-ms-expand {
     background-position-x: right;
     background-position-y: center;
     box-shadow: 0px 0px 22px #ccc;
-    border-radius: 14px !important;
+    border-radius: 5px !important;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4) !important;
     }
-    .langselect{ width: 100px; position: fixed;  right: 18px; top: 20px;}
+    .langselect{ width: 68px; position: fixed;  right: 18px; top: 20px;}
     .customselect{width: 100%; height: 42px;
     select{width: 100%;
       padding: 2px 6px 0 10px;
@@ -222,7 +241,7 @@ select::-ms-expand {
 
     /*==================Buttons=====================================*/
     .btn-success{background-color: $yelloish-green !important; border: 2px solid $yelloish-green !important;}
-    .btn-outlined{background-color: #fff !important; border: 2px solid $yelloish-green !important;}
+    .btn-outlined{background-color: #fff !important; border: 2px solid $yelloish-green !important; color: $btn-text-color !important;}
     .btn{box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4)!important;}
     .btn-red{background-color: $red !important; color: #fff !important;}
     .btn-red-outline{border: 2px solid $red !important; color: $red !important;}
@@ -245,10 +264,11 @@ select::-ms-expand {
     .p-a-10{padding: 10px  !important}
     .p-l-10{padding-left: 10px;}
     .max-w-50{max-width: 50px;}
+    .min-w-100{min-width: 100px !important}
 
     .footer{position: fixed;left:0; right: 0; bottom: 0; z-index: 99;}
     .footer-content{background-color: #3B3B3B;
-        padding: 20px;
+        padding: 24px;
         display: flex;
         align-items: center;
         color: #fff;

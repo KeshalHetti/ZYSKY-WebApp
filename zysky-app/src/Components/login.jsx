@@ -18,7 +18,7 @@ const Login = () => {
       <div className="my-modal modal-sm">
         <div className="logo">
           <img src={logo} alt="Logo" />
-          <h2 className="text-center">Partner Portal</h2>
+          <h2 className="text-center outfit">Partner Portal</h2>
         </div>
         <div className='login-group'>
           <form>
@@ -36,8 +36,9 @@ const Login = () => {
             </div>
 
             <div className="float-right p-t-30">
-               <Link to="/signup"><button type="button" className="btn btn-outlined">Sign Up</button></Link>
-              <button type="submit" className="btn btn-success m-l-15">Log In</button>
+            <Link to="/signup"> <button type="submit" className="btn btn-success min-w-100 m-l-15">Log In</button></Link>
+               <Link to="/signup"><button type="button" className="btn btn-outlined min-w-100  ">Sign Up</button></Link>
+              
             </div>
           </form>
         </div>
