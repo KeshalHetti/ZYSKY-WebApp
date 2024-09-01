@@ -17,7 +17,7 @@ const Newlocation = () => {
 
             </div>
             <div className="content-container-no-radious text-center">
-                <div className="row row-cols-1   row-cols-md-3 m-b-20">
+                <div className="row row-cols-1   row-cols-md-4 m-b-20">
                     <div className="col">
                         <div className="form-floating">
                             <input type="text" className="form-control" id="LocationName" placeholder="Location Name" />
@@ -45,6 +45,7 @@ const Newlocation = () => {
                             <label for="SubCategory" className='fl-select-label'>Sub Category</label>
                         </div>
                     </div>
+                    <div className="col"></div>
                 </div>
                 {/* 2nd Row */}
 
@@ -64,7 +65,7 @@ const Newlocation = () => {
                                     <input type="text" className="form-control" id="City" placeholder="City" />
                                     <label for="City">City</label>
                                 </div>
-                                <div className="form-floating customselect m-b-20">
+                                <div className="form-floating customselect m-b-15">
                                     <select clasclassNames="form-select" id="Powiat" aria-label="Floating label select example">
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -117,28 +118,27 @@ const Newlocation = () => {
                         <div className="col">
                             <div className='fieldset'>
                                 <div className='legend'>Images</div>
-                                <div className='m-b-20'>Drop LOGO<br></br>
-(format: *.jpg, *.png, size: 200x200)</div>
-<div  className='m-b-20'>Drop LOGO<br></br>
-(format: *.jpg, *.png, size: 200x200)</div>
-<div>Drop LOGO<br></br>
-(format: *.jpg, *.png, size: 200x200)</div>
+                                <input type="" className='drop-logo m-b-20' 
+  placeholder='Drop LOGO (format: *.jpg, *.png, size: 200x200)'/>
+<input type="" className='drop-logo m-b-20' 
+  placeholder='Drop IMAGES (format: *.jpg, *.png, 15 files max)'/>
+<input type="" className='drop-logo m-b-20' 
+  placeholder='Drop PRICING (format: *.jpg, *.png, 10 files max)'/>
                             </div>
                         </div>
                     </div>
                     <div className="col">
                         <div className='row m-b-20'>
-                            <div className='col'>
+                            <div className='col-lg-8'>
                             <div className="form-check">
-                                <input className="form-check-input" type="checkbox" value="" id="FastPartner" />
+                                <input className="form-check-input" type="checkbox" value="" id="FastPartner" disabled />
                                 <label className="form-check-label checkbox-fl" for="Fast Partner">
-                                <a href="#" className='link'>Fast Partner</a>
+                                <span>Fast Partner</span>
                                 </label>
                             </div>
                             </div>
-                            <div className='col'>
-                            <Link to="/home"><button type="button" className="btn btn-transparent m-l-15">Fast Points</button></Link>
-                            
+                            <div className='col-lg-4'>
+                            <input type="text" className="form-control text-center" id="FastPoints" placeholder="Fast Points" />
                             </div>
                         </div>
                         <p className='m-b-20'>Fast Partner is a busy location where Client is not being asked for amount during QR Scan. Client will get Fast Points for the transaction (they are based on an average transaction amount of the Partner).</p>
