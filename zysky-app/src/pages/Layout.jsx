@@ -40,7 +40,7 @@ const Layout = () => {
       <div> Company: XXXXXX</div>
       <div> Email: xxx@xxx.com</div>
     </div>
-    <div className="col-md-6 col-sm-auto text-right sm-text-left sm-m-t-10">
+    <div className="col-md-6 col-sm-auto text-right sm-text-left sm-m-t-10 m-t-10">
     <Link to="/"><button type="submit" className="btn btn-red-outline min-w-100">Free</button></Link>
     <Link to="/"><button type="submit" className="btn btn-red m-l-15 min-w-100">Not Verified</button></Link>
     

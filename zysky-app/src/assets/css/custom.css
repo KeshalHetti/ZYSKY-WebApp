@@ -329,6 +329,10 @@ select {
   margin-bottom: 30px;
 }
 
+.m-t-10 {
+  margin-top: 10px !important;
+}
+
 .m-t-15 {
   margin-top: -15px;
 }
@@ -363,6 +367,10 @@ select {
 
 .max-w-50 {
   max-width: 50px;
+}
+
+.min-w-80 {
+  min-width: 80px !important;
 }
 
 .min-w-100 {
@@ -605,6 +613,8 @@ a:hover {
 
 #root {
   padding: 0 !important;
+  width: 100% !important; /*width: calc(100% - 204px); */
+  margin: 0 !important;
   max-width: 100% !important;
 }
 
@@ -661,6 +671,16 @@ h1 {
   border-radius: 10px;
   /*overflow-y: scroll; */
   box-shadow: 1px 6px 6px #999;
+  margin-top: -10px;
+}
+
+.content-container-no-x-p {
+  padding: 40px 1px;
+  background-color: #fff;
+  border-radius: 10px;
+  /*overflow-y: scroll; */
+  box-shadow: 1px 6px 6px #999;
+  margin-top: -10px;
 }
 
 .content-container-no-radious {
@@ -749,19 +769,57 @@ h1 {
   box-shadow: 2px 2px 6px #999;
   position: relative;
 }
+.bg-yelloish-green h4, .bg-yelloish-green p {
+  color: #fff;
+}
+.bg-yelloish-green h4 {
+  font-size: 24px;
+}
 
 .smaple-logo {
-  max-width: 50px;
+  max-width: 48px;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-right {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 /*================Table=========================*/
+/*table{
+  border-spacing: 5px !important;
+  border-collapse: separate !important;
+ }
+ th {
+   padding: 15px !important;
+   border-right: 2px solid #E6E6E6 !important;
+
+ } */
+.vl {
+  position: relative;
+  border-right: 1px solid #E6E6E6;
+  float: right;
+  height: 100%;
+}
+
 .table thead tr th {
   font-weight: bold;
 }
 
+.table tr td {
+  vertical-align: middle;
+  padding-left: 15px;
+  text-align: left;
+}
+
 .grid-buttons {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   min-height: 50px;
 }
@@ -778,6 +836,24 @@ h1 {
   width: 80px;
 }
 
+.location thead {
+  border-top: 2px solid #E6E6E6;
+}
+.location thead th {
+  padding: 5px 0 5px 8px;
+  height: 50px;
+}
+.location thead th span {
+  float: left;
+  padding: 10px;
+  font-weight: 600;
+}
+.location thead tr th {
+  text-align: left;
+  padding: 5px 0 5px 8px;
+}
+
+/*===============*/
 .white {
   color: #fff !important;
 }
