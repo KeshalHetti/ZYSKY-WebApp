@@ -18,19 +18,19 @@ const Promos = () => {
 </div>
 
 </div>
-    <div className='content-container'>
+    <div className='content-container-no-x-p'>
     <table class="table">
   <thead>
-    <tr>
-      <th scope="col">Logo</th>
-      <th scope="col">Name</th>
-      <th scope="col">Addess</th>
-      <th scope="col">Actions</th>
+  <tr>
+      <th scope="col"className='w-15pc'><span>Logo </span><div className="vl">&nbsp;</div></th>
+      <th scope="col" className='w-30pc'><span>Name </span><div className="vl">&nbsp;</div></th>
+      <th scope="col"><span>Description </span><div className="vl">&nbsp;</div></th>
+      <th scope="col" className='w-15pc'><span>Actions</span></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row"><img src={promo1} alt="sample-Logo" className='promo-logo'/></th>
+      <td scope="row" ><img src={promo1} alt="sample-Logo" className='promo-logo'/></td>
       <td>Promo 1 Name</td>
       <td>Promo 1 Description</td>
       <td className='text-right'>
@@ -41,7 +41,7 @@ const Promos = () => {
       </td>
     </tr>
     <tr>
-      <th scope="row"><img src={promo2} alt="sample-Logo" className='promo-logo'/></th>
+      <td scope="row"><img src={promo2} alt="sample-Logo" className='promo-logo'/></td>
       <td>Promo 2 Name</td>
       <td>Promo 1 Description</td>
       <td className='text-right'>

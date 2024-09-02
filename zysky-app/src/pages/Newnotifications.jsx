@@ -28,16 +28,16 @@ const Newpromo = () => {
                                 </div>
                             <div className="form-floating customselect m-b-20">
                                     <select clasclassNames="form-select" id="MessageTemplate" aria-label="Floating label select example">
-                                        <option value="1">One</option>
+                                        <option value="1">Message Template</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
                                     </select>
-                                    <label for="MessageTemplate" className='fl-select-label'>Message Template</label>
+                                    <label for="MessageTemplate" className='fl-select-label sr-only'>Message Template</label>
                                 </div>
                                 {/* 2 */}
                                 <div className='smalll-number-group'>
-                                <div className='fl'><div className='number-small'>2</div></div><div className='fl txt-with-small-number'>Fill up required message parameters (optional)</div>
-                                <div className='small-text'>Watch the message preview if it looks OK before saving.</div>
+                                <div className='fl'><div className='number-small'>2</div></div><div className='fl txt-with-small-number text-left'>Fill up required message parameters (optional)</div>
+                                <div className='small-text text-left'>Watch the message preview if it looks OK before saving.</div>
                                 </div>
                                 <div className='row'>
                                 <div className='col'>
@@ -66,11 +66,11 @@ const Newpromo = () => {
                                 </div>
                                 <div className="form-floating customselect m-b-20">
                                     <select clasclassNames="form-select" id="MessageTemplate" aria-label="Floating label select example">
-                                        <option value="1">One</option>
+                                        <option value="1">One-time Promo</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
                                     </select>
-                                    <label for="MessageTemplate" className='fl-select-label'>One-time Promo</label>
+                                    <label for="MessageTemplate" className='fl-select-label sr-only'>One-time Promo</label>
                                 </div>
                                 {/* 4*/}
                                 <div className='smalll-number-group'>
@@ -78,12 +78,12 @@ const Newpromo = () => {
                                 <div className='small-text'>To whom should we send your push notification</div>
                                 </div>
                                 <div className="form-floating customselect m-b-20">
-                                    <select clasclassNames="form-select" id="MessageTemplate" aria-label="Floating label select example">
-                                        <option value="1">One</option>
+                                    <select clasclassNames="form-select" id="TargetGroup" aria-label="Floating label select example">
+                                        <option value="1">Target Group</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
                                     </select>
-                                    <label for="MessageTemplate" className='fl-select-label'>Target Group</label>
+                                    <label for="TargetGroup" className='fl-select-label sr-only'>Target Group</label>
                                 </div>
                                 {/* 5 */}
                                 <div className='smalll-number-group'>
@@ -94,19 +94,20 @@ const Newpromo = () => {
                                 </div>
                             
                             </div>
-                            <div className="col-lg-8  col-md-auto">
-                                <p>Message Preview</p>
-                                <div className='shadow-box'>
+                            <div className="col-lg-6  col-md-auto">
+                                <p className='text-left'>Message Preview</p>
+                                <div className='shadow-box black text-left'>
                                 Hej, jutro jest Dzień Pizzy. Jeżeli tak jak my kochasz pizzę, to wpadnij do nas a otrzymasz Param_1 zniżki na każdą pizzę. Promka "Promo_Name" już czeka na Ciebie w aplikacji!
 Zapraszamy, "Partner_Name"
 
                                 </div>
                             </div>
+                            <div className="col-lg-2  col-md-auto"></div>
                         </div>
                     </div>
                 </div>
                 {/* Add */}
-                <div className='fr text-right'><Link to="/home"><button type="button" className="btn btn-success m-l-15">Add</button></Link></div>
+                <div className='fr text-right'><Link to="/home"><button type="button" className="btn btn-success m-l-15 min-w-140">Add</button></Link></div>
             </div>
            
         </div>

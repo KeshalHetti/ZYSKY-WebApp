@@ -130,7 +130,7 @@ const Newlocation = () => {
                     <div className="col">
                         <div className='row m-b-20'>
                             <div className='col-lg-8'>
-                            <div className="form-check">
+                            <div className="form-check m-t-10">
                                 <input className="form-check-input" type="checkbox" value="" id="FastPartner" disabled />
                                 <label className="form-check-label checkbox-fl" for="Fast Partner">
                                 <span>Fast Partner</span>
@@ -141,15 +141,15 @@ const Newlocation = () => {
                             <input type="text" className="form-control text-center" id="FastPoints" placeholder="Fast Points" />
                             </div>
                         </div>
-                        <p className='m-b-20'>Fast Partner is a busy location where Client is not being asked for amount during QR Scan. Client will get Fast Points for the transaction (they are based on an average transaction amount of the Partner).</p>
-                        <h4>PIN</h4>
-                        <p>Your PIN is only visible when you create a new location. You can reset the PIN anytime but you cannot show the PIN again once saved.</p>
+                        <p className='m-b-20 text-justify'>Fast Partner is a busy location where Client is not being asked for amount during QR Scan. Client will get Fast Points for the transaction (they are based on an average transaction amount of the Partner).</p>
+                        <input type="" className='drop-logo m-b-20 text-center'  placeholder='PIN'/>
+                        <p className='text-justify'>Your PIN is only visible when you create a new location. You can reset the PIN anytime but you cannot show the PIN again once saved.</p>
                     </div>
                     
                 </div>
                 <div className='fr text-right'><Link to="/home"><button type="button" className="btn btn-success m-l-15">Add</button></Link></div>
             </div>
-           
+           <div className='p-b-66'></div>
         </div>
 
     );

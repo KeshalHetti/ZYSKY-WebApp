@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'zysky';
-  src: url('../font/zysky.eot?75247670');
-  src: url('../font/zysky.eot?75247670#iefix') format('embedded-opentype'),
-       url('../font/zysky.woff2?75247670') format('woff2'),
-       url('../font/zysky.woff?75247670') format('woff'),
-       url('../font/zysky.ttf?75247670') format('truetype'),
-       url('../font/zysky.svg?75247670#zysky') format('svg');
+  src: url('../font/zysky.eot?86000659');
+  src: url('../font/zysky.eot?86000659#iefix') format('embedded-opentype'),
+       url('../font/zysky.woff2?86000659') format('woff2'),
+       url('../font/zysky.woff?86000659') format('woff'),
+       url('../font/zysky.ttf?86000659') format('truetype'),
+       url('../font/zysky.svg?86000659#zysky') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'zysky';
-    src: url('../font/zysky.svg?75247670#zysky') format('svg');
+    src: url('../font/zysky.svg?86000659#zysky') format('svg');
   }
 }
 */
@@ -63,3 +63,4 @@
 .icon-dialog:before { content: '\e806'; } /* '' */
 .icon-home:before { content: '\e807'; } /* '' */
 .icon-log-out:before { content: '\e808'; } /* '' */
+.icon-close:before { content: '\e809'; } /* '' */
