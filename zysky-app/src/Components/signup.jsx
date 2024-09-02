@@ -7,20 +7,24 @@ const SignUp = () => {
     return (
         <div>
             <div className="row m-t-15 gx-5">
-                <div className="col-3">
+                <div className="col-lg-4">
                     &nbsp;
                 </div>
-                <div className="col-6">
-                    <div className="logo">
+                <div className="col-lg-4">
+                    <div className="logo max-w-380">
                         <img src={logo} alt="Logo" />
                     </div>
                 </div>
-                <div className="col-3">
+                <div className="col-lg-4">
                     &nbsp;
                 </div>
             </div>
-
-            <h2 className='p-b-40 outfit'>Partner Registration</h2>
+            {/* */}
+            <div className="row m-t-15 ">
+                <div className="col-lg-3">
+                </div>
+                <div className="col-lg-6">
+                <h2 className='p-b-40 outfit'>Partner Registration</h2>
             <form>
                 <div className='fieldset'>
                     <div className='legend'>New Partner Account</div>
@@ -92,7 +96,8 @@ const SignUp = () => {
                                 <a href="#" className='link'>Privacy Policy</a>
                                 </label>
                             </div>
-                            <br></br>
+                            </div>
+                            <div className='fl'>
                             <div className="form-check">
                                 <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                                 <label className="form-check-label checkbox-fl" for="flexCheckDefault">
@@ -103,10 +108,14 @@ const SignUp = () => {
                         </div>
                     </div>
                 </div>
-                <div className="float-right p-t-30 m-r-60">
+                <div className="float-right p-t-20 m-r-60">
                 <Link to="/home"><button type="button" className="btn btn-success ">Utwórz&nbsp;konto</button></Link>
             </div>
             </form>
+                </div>
+                <div className="col-lg-3">
+                </div>
+            </div>
         </div>
     );
 };

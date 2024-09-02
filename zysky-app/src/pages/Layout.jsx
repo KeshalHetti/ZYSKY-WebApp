@@ -34,7 +34,6 @@ const Layout = () => {
     </div>
     <div className="content">
     <div className="header">
-    <div>
   <div className="row">
     <div className="col-md-6 col-sm-auto text-left logged-info">
       <div> Company: XXXXXX</div>
@@ -46,9 +45,10 @@ const Layout = () => {
     
     </div>
   </div>
-</div>
     </div>
+    <div className="content-area">
       <Outlet />
+      </div>
       </div>
 
 

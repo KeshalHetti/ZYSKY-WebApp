@@ -300,6 +300,8 @@ select {
 
 .btn-info {
   color: #fff !important;
+  background-color: #407BFF !important;
+  border: none !important;
 }
 
 .btn {
@@ -308,6 +310,10 @@ select {
 
 .float-right {
   float: right;
+}
+
+.p-t-20 {
+  padding-top: 20px;
 }
 
 .p-t-30 {
@@ -352,6 +358,11 @@ select {
 
 .m-t--25 {
   margin-top: -22px;
+}
+
+.m-y-6 {
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 .p-b-20 {
@@ -404,6 +415,10 @@ select {
 
 .min-w-200 {
   min-width: 200px !important;
+}
+
+.max-w-380 {
+  min-width: 380px !important;
 }
 
 .w-15pc {
@@ -715,19 +730,24 @@ h1 {
 }
 
 .content {
-  top: 0;
-  position: relative;
   transform: translateX(50px);
   margin-left: 0;
   transition: transform 0.5s ease-out;
   position: relative;
-  height: 100vh;
   left: 154px;
-  right: 0;
   width: calc(100% - 204px);
   padding: 15px;
   background-color: #F4F4F4;
-  margin-bottom: 65px;
+  bottom: 0;
+  top: 0;
+  height: 100vh;
+}
+
+.content-area {
+  height: auto;
+  display: inline-block;
+  margin-bottom: 80px;
+  width: 100%;
 }
 
 .content-container {
@@ -737,7 +757,6 @@ h1 {
   /*overflow-y: scroll; */
   box-shadow: 1px 6px 6px #999;
   margin-top: -10px;
-  margin-bottom: 65px;
 }
 
 .content-container-no-x-p {
@@ -747,13 +766,11 @@ h1 {
   /*overflow-y: scroll; */
   box-shadow: 1px 6px 6px #999;
   margin-top: -10px;
-  margin-bottom: 65px;
 }
 
 .content-container-no-radious {
   padding: 40px;
   background-color: #fff;
-  margin-bottom: 65px;
 }
 
 .drop-logo {
@@ -855,6 +872,7 @@ h1 {
 }
 .bg-yelloish-green h4 {
   font-size: 24px;
+  margin-bottom: 0 !important;
 }
 
 .smaple-logo {
@@ -1005,4 +1023,10 @@ table thead tr th {
 
 .font-10px {
   font-size: 10px;
+}
+
+.upgrade-to-promos {
+  font-size: 10px;
+  float: left;
+  margin: 7px 0 0 10px;
 }/*# sourceMappingURL=custom.css.map */

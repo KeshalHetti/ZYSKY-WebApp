@@ -253,11 +253,12 @@ select::-ms-expand {
     .btn-transparent{background-color: transparent!important; color:#999 !important; width: auto;}
     .btn-warning{background-color: $orange !important; color: #fff !important;}
     .btn-danger{background-color: $red !important; color: #fff !important;}
-    .btn-info{color:#fff !important}
+    .btn-info{color:#fff !important; background-color: #407BFF !important; border: none !important;}
     .btn{width: auto !important;}
 
 
     .float-right{float: right;}
+    .p-t-20{padding-top: 20px;}
     .p-t-30{padding-top: 30px;}
     .m-r-60{margin-right: 60px;}
     .m-l-15{margin-left: 15px;}
@@ -269,6 +270,7 @@ select::-ms-expand {
     .m-t-20{margin-top: 20px !important}
     .m-t-15{margin-top: -15px;}
     .m-t--25{margin-top: -22px;}
+    .m-y-6{margin-top: 6px; margin-bottom: 6px;}
     .p-b-20{padding-bottom: 20px;}
     .p-b-30{padding-bottom: 30px;}
     .p-b-40{padding-bottom: 40px;}
@@ -282,6 +284,7 @@ select::-ms-expand {
     .min-w-100{min-width: 100px !important}
     .min-w-140{min-width: 140px !important}
     .min-w-200{min-width: 200px !important}
+    .max-w-380{min-width: 380px !important}
     .w-15pc{width: 15%;}
     .w-30pc{width: 30%;}
     .min-h-110{min-height: 110px;}
@@ -511,19 +514,19 @@ h1{color:#000; font-size: 42px !important;;}
     height: 100vh;}
    
 .content{
-      top:0;
-      position: relative;
-      transform: translateX(50px);
-      margin-left: 0;
-      transition: transform 0.5s ease-out;
-      position: relative;
-      height: 100vh;
-     left: 154px;
-      right:0;
-      width: calc(100% - 204px);
-      padding: 15px; background-color: #F4F4F4;
-      margin-bottom: 65px;
+  transform: translateX(50px);
+  margin-left: 0;
+  transition: transform 0.5s ease-out;
+  position: relative;
+  left: 154px;
+  width: calc(100% - 204px);
+  padding: 15px;
+  background-color: #F4F4F4;
+  bottom: 0;
+  top:0;
+  height: 100vh;
     }
+    .content-area{height: auto; display: inline-block; margin-bottom: 80px; width: 100%;}
 
 .content-container{padding: 40px;
   background-color: #fff;
@@ -531,7 +534,6 @@ h1{color:#000; font-size: 42px !important;;}
   /*overflow-y: scroll; */
     box-shadow: 1px 6px 6px #999;
     margin-top: -10px;
-    margin-bottom: 65px;
 }
 .content-container-no-x-p{padding: 40px 1px;
   background-color: #fff;
@@ -539,11 +541,9 @@ h1{color:#000; font-size: 42px !important;;}
   /*overflow-y: scroll; */
     box-shadow: 1px 6px 6px #999;
     margin-top: -10px;
-    margin-bottom: 65px;
 }
 .content-container-no-radious{padding: 40px;
   background-color: #fff;
-  margin-bottom: 65px;
 }
 .drop-logo{border-radius: 2px !important;
   background-color: #F9F9F9;
@@ -595,7 +595,7 @@ h1{color:#000; font-size: 42px !important;;}
     box-shadow: 2px 2px 6px #999;
     position: relative;
     h4, p{color:#fff}
-    h4{font-size: 24px;}
+    h4{font-size: 24px; margin-bottom: 0 !important;}
 }
 .smaple-logo{max-width: 48px;}
 .vertical-center{display: flex;  align-items: center;}
@@ -665,3 +665,4 @@ h1{color:#000; font-size: 42px !important;;}
     display: inline-block;
     margin-bottom: 10px;}
     .font-10px{font-size: 10px;}
+    .upgrade-to-promos{font-size: 10px; float: left; margin: 7px 0 0 10px;}

@@ -22,36 +22,36 @@ const Account = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col col-lg-3 m-b-30">
-                                <div className='row'>
-                                    <div className='fl display-contents'>Current Plan:</div><div className='fl display-contents'><span className='btn btn-red-outline btn-with-text'>Free</span></div>
+                                <div className='row m-y-6'>
+                                    <div className='fl display-contents'>Current Plan:</div><div className='fl display-contents'><span className='btn btn-red-outline btn-with-text min-w-100'>Free</span></div>
                                 </div>
-                                <div className='row'>
+                                <div className='row m-y-6'>
                                     <div className='fl display-contents'>Expires: &nbsp;</div><div className='fl display-contents'>12-09-2025, 13:40:22</div>
                                 </div>
-                                <div className='row'>
+                                <div className='row m-y-6'>
                                     <p className='fl display-contents'>Plan Description</p>
                                 </div>
                             </div>
                             <div className="col-md-auto col-lg-9 sm-p-l-r-0">
                                 <div className="acc-row">
-                                    <div className='fl  '><Link to="/home"><button type="button" className="btn btn-info btn-with-text sm-m-0 ">Upgrade to PROMOS</button></Link></div><div className='fl p-l-10'>PROMOS plan description</div>
+                                    <div className='fl  '><Link to="/home"><button type="button" className="btn btn-info btn-with-text sm-m-0 ">Upgrade to PROMOS</button></Link></div><div className='upgrade-to-promos'>PROMOS plan description</div>
                                 </div> <br></br>
                                 <div className="acc-row">
-                                    <div className='fl  '><Link to="/home"><button type="button" className="btn btn-info btn-with-text sm-m-0 ">Upgrade to PROMOS</button></Link></div><div className='fl p-l-10'>PROMOS plan description</div>
+                                    <div className='fl  '><Link to="/home"><button type="button" className="btn btn-info btn-with-text sm-m-0 ">Upgrade to PROMOS</button></Link></div><div className='upgrade-to-promos'>PROMOS plan description</div>
                                 </div>
                                 <div className="acc-row">
-                                    <div className='fl '><Link to="/home"><button type="button" className="btn btn-info btn-with-text sm-m-0 ">Upgrade to PROMOS</button></Link></div><div className='fl p-l-10'>PROMOS plan description</div>
+                                    <div className='fl '><Link to="/home"><button type="button" className="btn btn-info btn-with-text sm-m-0 ">Upgrade to PROMOS</button></Link></div><div className='upgrade-to-promos'>PROMOS plan description</div>
                                 </div>
                             </div>
                         </div></div>
                 </div>
                 {/* 2nd Row */}
-                <div className="row row-cols-1   row-cols-md-2 m-b-20">
-                    <div className="col col-lg-6 col-md-auto m-b-20">
+                <div className="row row-cols-1   row-cols-md-2 m-b-20 gx-1">
+                    <div className="col col-lg-5 col-md-auto m-b-20">
                         <div className='fieldset'>
                             <div className='legend'>Account</div>
                             <div className='row'>
-                                <div className='col-lg-10 col-md-auto'>
+                                <div className='col-lg-7 col-md-auto'>
                                     <div className="form-floating">
                                         <input type="text" className="form-control" id="StWebsFirstnameiteeet" placeholder="Firstname" />
                                         <label for="WebFirstnamesite">Firstname</label>
@@ -77,18 +77,19 @@ const Account = () => {
                                         <label for="ConfirmPassword">Confirm Password</label>
                                     </div>
                                 </div>
-                                <div className='col-lg-2 col-md-auto'>
-                                    <div className='fr text-right'><Link to="/home"><button type="button" className="btn btn-success m-l-15">Save</button></Link></div>
+                                <div className='col-lg-5 col-md-auto'>
+                                    <div className='fr text-right'><Link to="/home"><button type="button" className="btn btn-success m-l-15 min-w-80">Save</button></Link></div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <div className="col col-lg-6 col-md-auto ">
+                    <div className="col col-lg-2 col-md-auto "></div>
+                    <div className="col col-lg-5 col-md-auto ">
                         <div className='fieldset'>
                             <div className='legend'>Company</div>
                             <div className='row'>
-                                <div className='col-lg-10 col-md-auto'>
+                                <div className='col-lg-7 col-md-auto'>
                                     <div className="form-floating">
                                         <input type="text" className="form-control" id="CompanyName" placeholder="Company Name" />
                                         <label for="CompanyName">Company Name</label>
@@ -120,8 +121,8 @@ const Account = () => {
                                         <label for="nip">NIP</label>
                                     </div>
                                 </div>
-                                <div className='col-lg-2 col-md-auto'>
-                                    <div className='fr text-right'><Link to="/home"><button type="button" className="btn btn-success m-l-15">Save</button></Link></div>
+                                <div className='col-lg-5 col-md-auto'>
+                                    <div className='fr text-right'><Link to="/home"><button type="button" className="btn btn-success m-l-15 min-w-80">Save</button></Link></div>
                                 </div>
                             </div>
                         </div>

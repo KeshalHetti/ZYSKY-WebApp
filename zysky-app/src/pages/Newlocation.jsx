@@ -147,9 +147,8 @@ const Newlocation = () => {
                     </div>
                     
                 </div>
-                <div className='fr text-right'><Link to="/home"><button type="button" className="btn btn-success m-l-15">Add</button></Link></div>
+                <div className='fr text-right'><Link to="/home"><button type="button" className="btn btn-success m-l-15 min-w-140">Add</button></Link></div>
             </div>
-           <div className='p-b-66'></div>
         </div>
 
     );

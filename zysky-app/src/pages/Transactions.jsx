@@ -19,12 +19,12 @@ const Transactions = () => {
             <table class="table">
                 <thead>
                     <tr>
-                    <th scope="col">Date&Time</th>
-                    <th scope="col">Client</th>
-                    <th scope="col">Promo (if used)</th>
-                    <th scope="col">Location</th>
-                    <th scope="col">Amount (if provided)</th>
-                    </tr>
+                            <th scope="col" className='w-15pc'><span>Date&Time </span><div className="vl">&nbsp;</div></th>
+                            <th scope="col" className='w-30pc'><span>Client </span><div className="vl">&nbsp;</div></th>
+                            <th scope="col"><span>Promo (if used) </span><div className="vl">&nbsp;</div></th>
+                            <th scope="col" className='w-15pc'><span>Location</span><div className="vl">&nbsp;</div></th>
+                            <th scope="col" className='w-15pc'><span>Amount (if provided)</span></th>
+                        </tr>
                 </thead>
                 <tbody>
                     <tr>
