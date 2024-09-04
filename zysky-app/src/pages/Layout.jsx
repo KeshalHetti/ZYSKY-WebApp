@@ -1,12 +1,17 @@
 import { Outlet, Link } from "react-router-dom";
 import logo from '../assets/img/zysky-splash-small 1@2x.png';
-
+import logoy from '../assets/img/Y.png';
 const Layout = () => {
   return (
     <div>
-      <div className="sidebar">
+<nav role="navigation">
+  <div id="menuToggle">
+    <input type="checkbox"  className="toggleinput"/>
     <div className="dashbord-logo">
     <img src={logo} alt="Logo" />
+    </div>
+    <div className="y-logo">
+    <img src={logoy} alt="Logo" />
     </div>
     <ul id="menu">
     <li>
@@ -31,7 +36,6 @@ const Layout = () => {
             <Link to="/locations"><i className="icon-log-out"></i><span>Logout</span></Link>
           </li>
     </ul>
-    </div>
     <div className="content">
     <div className="header">
   <div className="row">
@@ -50,6 +54,14 @@ const Layout = () => {
       <Outlet />
       </div>
       </div>
+  </div>
+</nav>
+
+
+
+      {/* */}
+      
+    
 
 
 <div className='footer'><span className='footer-content'>All Rights Reserved, 2024 ZYSKY Sp. z o.o. </span></div>
