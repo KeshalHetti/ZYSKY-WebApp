@@ -42,41 +42,41 @@ const Newpromo = () => {
             <div className="col col-lg-7">
             <div className='fieldset m-b-30'>
                     <div className='legend'>Details</div>
-                    <div className="container justify-content-md-center">
+                    <div className="container ">
                         <div className="row">
                             <div className="col-lg-12 col-md-auto">
-                            <div class="mb-3">
+                            <div className="mb-3">
   <label for="Description" className="form-label sr-only">Description</label>
   <textarea className="form-control" id="Description" rows="3" placeholder='Description'>Description</textarea>
 </div>
-<div class="mb-3">
-<div className='fl'>
+<div className="row">
+<div className='col-lg-2 col-md-auto'>
 <div className="form-floating">
     <input type="text" className="form-control max-w-115" id="Points" placeholder="Points" />
     <label for="Points">Points</label>
 </div>
 </div>
-<div className='fl newpromo-txt'>Price of the Promo in Points. Use when you want to offer a Promo that will give 100% discount and can be exchanged for points. Zero means, no price. </div>
+<div className='col-lg-10 col-md-auto newpromo-txt'>Price of the Promo in Points. Use when you want to offer a Promo that will give 100% discount and can be exchanged for points. Zero means, no price. </div>
 </div>
 {/* */}
-<div class="mb-3">
-<div className='fl'>
+<div className="row">
+<div className='col-lg-2 col-md-auto'>
 <div className="form-floating">
     <input type="text" className="form-control max-w-115" id="Discount" placeholder="Discount" />
     <label for="Discount">Discount</label>
 </div>
 </div>
-<div className='fl newpromo-txt'>Discount that you give to your Clients. For example 10, means there will be 10% of a discount.</div>
+<div className='col-lg-10 col-md-auto newpromo-txt'>Discount that you give to your Clients. For example 10, means there will be 10% of a discount.</div>
 </div>
 {/* */}
-<div class="mb-3">
-<div className='fl'>
+<div className="row">
+<div className='col-lg-2 col-md-auto'>
 <div className="form-floating">
     <input type="text" className="form-control max-w-115" id="Gain" placeholder="Gain" />
     <label for="Gain">Gain</label>
 </div>
 </div>
-<div className='fl newpromo-txt'>How much in PLN a Client can get when using this Promo. Example: 10-50 means a Client can get 10zł to 50zł discount for the product.</div>
+<div className='col-lg-10 col-md-auto newpromo-txt'>How much in PLN a Client can get when using this Promo. Example: 10-50 means a Client can get 10zł to 50zł discount for the product.</div>
 </div>
 {/* */}
 <div className='empty-placeholder'>

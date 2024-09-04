@@ -782,6 +782,10 @@ h1 {
   width: 100%;
 }
 
+.container {
+  max-width: 100% !important;
+}
+
 .content-container {
   padding: 40px;
   background-color: #fff;
@@ -1042,9 +1046,8 @@ table thead tr th {
 }
 
 .newpromo-txt {
-  margin-left: 131px;
-  margin-top: -48px;
   text-align: left;
+  padding-top: 5px;
 }
 
 .acc-row {

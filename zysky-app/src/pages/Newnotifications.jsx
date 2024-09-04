@@ -40,19 +40,19 @@ const Newpromo = () => {
                                 <div className='small-text text-left'>Watch the message preview if it looks OK before saving.</div>
                                 </div>
                                 <div className='row'>
-                                <div className='col'>
+                                <div className='col-lg-4 col-md-auto'>
                                     <div class="form-floating">
                                         <input type="text" className="form-control" id="Param_1" placeholder="Param_1" />
                                         <label for="Param_1">Param_1</label>
                                     </div>
                                 </div>
-                                <div className='col'>
+                                <div className='col-lg-4 col-md-auto'>
                                     <div className="form-floating">
                                         <input type="text" className="form-control" id="Param_2" placeholder="Param_2" />
                                         <label for="Param_2">Param_2</label>
                                     </div>
                                 </div>
-                                <div className='col'>
+                                <div className='col-lg-4 col-md-auto'>
                                     <div className="form-floating">
                                         <input type="text" className="form-control" id="Param_3" placeholder="Param_3" />
                                         <label for="Param_3">Param_3</label>
