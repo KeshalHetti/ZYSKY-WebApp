@@ -546,113 +546,142 @@ a:hover {
   color: tomato;
 }
 
-#menuToggle {
-  display: block;
-  position: relative;
-  left: 0;
-  z-index: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-       user-select: none;
-  background-color: #fff;
-}
-
-.toggleinput {
-  display: block;
-  width: 140px;
-  height: 52px;
-  position: absolute;
-  top: 0px;
-  left: 6px;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 9999;
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-/* #menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-
-  background: #cdcdcd;
-  border-radius: 3px;
-
-  z-index: 1;
-
-  transform-origin: 4px 0px;
-
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-} */
-#menuToggle span:first-child {
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
-}
-
-#menuToggle input:checked ~ div.sidebar {
-  width: 50px;
-  transform: translateX(50px);
-}
-
-/*
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+/* Small Screens */
+@media only screen and (max-width: 600px) {
+  .y-logo {
     opacity: 1;
-    transform: rotate(-49deg) scale(1, 1);
-}
-#menuToggle input:checked ~ span:nth-child(2)
-{
+    width: 52px;
+    height: 68px;
+    border-bottom: 1.6px solid #a7a7a7;
+  }
+  .dashbord-logo {
     opacity: 0;
-} */
-/*
-#menuToggle input:checked ~ span:nth-last-child(1)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-} */
-.sidebar {
-  height: 100vh;
-  box-shadow: 4px 4px 6px #b8b8b8;
-  display: block;
-  position: fixed;
-  background: #ffffff;
-  width: 204px;
-  left: 0;
-  top: 0;
-  z-index: 9;
+    width: 0;
+  }
+  #menu {
+    transform: none;
+    transition: transform 0.5s ease-in;
+    width: 50px;
+    left: 0;
+  }
+  #menu li span {
+    display: none;
+  }
+  .content {
+    transform: none;
+    transition: transform 0.5s ease-in;
+    left: 50px;
+    width: calc(100% - 50px);
+  }
 }
-
-#menu {
-  position: fixed;
-  width: 200px;
-  margin: 0;
-  padding: 80px 0;
-  /* background: #fff; */
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  transform-origin: 0% 0%;
-  transform: translate(0, 0);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  top: 0;
-  box-shadow: 4px 4px 6px;
-  z-index: 9;
-  height: 100vh;
+/* Large Screens */
+@media only screen and (min-width: 600px) {
+  .y-logo {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    border-bottom: 1.6px solid #a7a7a7;
+  }
+  .dashbord-logo {
+    opacity: 1;
+    width: 166px;
+    top: 0;
+    left: 15px;
+    position: fixed;
+    border-bottom: 1.6px solid #a7a7a7;
+    z-index: 999;
+  }
+  /*.sidebar{
+    height: 100vh;
+    box-shadow: 4px 4px 6px #b8b8b8;
+    display: block;
+    position: fixed;
+    background: #ffffff;
+    width: 204px;
+    left: 0;
+    top: 0;
+    z-index: 9;
+  }*/
+  #menu {
+    position: fixed;
+    width: 200px;
+    margin: 0;
+    padding: 80px 0;
+    /* background: #fff; */
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(0, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    top: 0;
+    box-shadow: 4px 4px 6px;
+    z-index: 9;
+    height: 100vh;
+    bottom: 0;
+  }
+  #menu li {
+    padding: 0 5px;
+    font-size: 22px;
+    text-align: left;
+  }
+  #menu li i {
+    color: #BBD260;
+    font-size: 28px;
+    float: left;
+  }
+  #menu li a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+  }
+  #menu li span {
+    float: left;
+    padding: 12px 4px 0 0;
+    background: transparent;
+    color: #000;
+  }
+  #menuToggle input:checked ~ #menu {
+    transform: none;
+    transition: transform 0.5s ease-in;
+    width: 50px;
+    left: 0;
+  }
+  #menuToggle input:checked ~ #menu li span {
+    display: none;
+  }
+  #menuToggle input:checked ~ div.content {
+    transform: none;
+    transition: transform 0.5s ease-in;
+    left: 50px;
+    width: calc(100% - 50px);
+  }
+  #menuToggle input:checked ~ div.dashbord-logo {
+    opacity: 0;
+    /*height: 63px; display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: transform 0.5s ease-out;
+    transform: translateX(-50px);*/
+  }
+  #menuToggle input:checked ~ div.y-logo {
+    opacity: 1;
+    width: 52px;
+    height: 68px;
+  }
+  .content {
+    left: 204px;
+    transform: none;
+    transition: transform 0.5s ease-out;
+    margin-left: 0;
+  }
 }
-
+/* end Large screen @media */
 #menu li {
   padding: 0 5px;
   font-size: 22px;
   text-align: left;
+  list-style: none;
 }
 #menu li i {
   color: #BBD260;
@@ -671,59 +700,40 @@ a:hover {
   color: #000;
 }
 
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ #menu {
-  transform: none;
-  transition: transform 0.5s ease-in;
-  width: 50px;
-  left: 0;
-}
-#menuToggle input:checked ~ #menu li span {
-  display: none;
-}
-
-#menuToggle input:checked ~ div.content {
-  transform: none;
-  transition: transform 0.5s ease-in;
-  left: 50px;
-  width: calc(100% - 50px);
-}
-
-#menuToggle input:checked ~ div.dashbord-logo {
-  opacity: 0;
-  /*height: 63px; display: flex;
-  justify-content: center;
-  flex-direction: column;
-  transition: transform 0.5s ease-out;
-  transform: translateX(-50px);*/
-}
-
-.y-logo {
-  opacity: 0;
+#menuToggle {
+  display: block;
   position: fixed;
+  left: 0;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+  background-color: #fff;
   top: 0;
-  z-index: 999;
-  border-bottom: 1.6px solid #a7a7a7;
 }
 
-#menuToggle input:checked ~ div.y-logo {
-  opacity: 1;
-  width: 52px;
-  height: 68px;
+.toggleinput {
+  display: block;
+  width: 140px;
+  height: 52px;
+  position: fixed;
+  top: 0px;
+  left: 6px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 9999;
+  -webkit-touch-callout: none;
 }
 
 .content {
-  position: absolute;
-  transform: none;
-  margin-left: 0;
-  transition: transform 0.5s ease-out;
-  background-color: #e1e1e1;
+  position: fixed;
+  background-color: #F4F4F4;
   height: 100vh;
-  left: 100px;
   right: 0;
   top: 0;
+  bottom: 0;
+  padding: 20px;
+  overflow-y: scroll;
 }
 
 #root {
@@ -757,20 +767,6 @@ h1 {
   background-color: #f6f6f6;
   left: 0;
   width: 100%;
-  top: 0;
-  height: 100vh;
-}
-
-.content {
-  transform: translateX(50px);
-  margin-left: 0;
-  transition: transform 0.5s ease-out;
-  position: relative;
-  left: 154px;
-  width: calc(100% - 204px);
-  padding: 15px;
-  background-color: #F4F4F4;
-  bottom: 0;
   top: 0;
   height: 100vh;
 }
@@ -816,14 +812,6 @@ h1 {
   font-size: 12px;
   box-shadow: none;
   margin-bottom: 12px;
-}
-
-.dashbord-logo {
-  width: 166px;
-  left: 15px;
-  position: fixed;
-  border-bottom: 1.6px solid #a7a7a7;
-  z-index: 999;
 }
 
 .header {

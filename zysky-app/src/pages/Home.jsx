@@ -9,15 +9,15 @@ const Home = () => {
         <div className='fieldset homefeildset m-b-30'>
           <div className='legend'>Statistics</div>
           <div className="container text-center">
-  <div className="row row-cols-1   row-cols-md-6 statistics gx-5">
+  <div className="row row-cols-1   row-cols-lg-6 statistics gx-5">
     <div className="col"> </div>
-    <div className="col"> <h4>Locations</h4>
+    <div className="col col-lg-2 col-md-auto"> <h4>Locations</h4>
       <h1>2</h1></div>
-    <div className="col"><h4>Promos</h4>
+    <div className="col col-lg-2 col-md-auto"><h4>Promos</h4>
                 <h1>5</h1></div>
-    <div className="col"><h4>Clients</h4>
+    <div className="col col-lg-2 col-md-auto"><h4>Clients</h4>
                 <h1>164</h1></div>
-    <div className="col"><h4>Notifications</h4>
+    <div className="col col-lg-2 col-md-auto"><h4>Notifications</h4>
                 <h1>567</h1></div>
     <div className="col"> </div>
   </div>
